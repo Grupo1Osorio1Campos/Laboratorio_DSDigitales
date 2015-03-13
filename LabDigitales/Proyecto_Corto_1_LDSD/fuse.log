@@ -1,0 +1,17 @@
+Running: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro_isim_beh.exe -prj C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro_beh.prj work.Prueba_Registro work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Registro_8bits.v" into library work
+Analyzing Verilog file "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" into library work
+ERROR:HDLCompiler:69 - "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" Line 56: <D> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" Line 57: <D> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" Line 58: <D> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" Line 59: <D> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" Line 60: <D> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" Line 61: <D> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" Line 62: <D> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" Line 63: <D> is not declared.
+ERROR:HDLCompiler:598 - "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v" Line 25: Module <Prueba_Registro> ignored due to previous errors.
+Verilog file C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_1_LDSD/Prueba_Registro.v ignored due to errors

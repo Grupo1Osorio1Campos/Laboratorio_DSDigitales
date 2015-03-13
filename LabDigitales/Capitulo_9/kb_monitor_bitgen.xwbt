@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Javier\Desktop\LabDigitales\Capitulo_9\kb_monitor.ncd
-OUTFILE=C:\Users\Javier\Desktop\LabDigitales\Capitulo_9\kb_monitor.bit
-FAMILY=Spartan6
-PART=xc6slx16-2csg324
-WORKINGDIR=C:\Users\Javier\Desktop\LabDigitales\Capitulo_9
-LICENSE=WebPack
-USER_INFO=210933652_0_0_533

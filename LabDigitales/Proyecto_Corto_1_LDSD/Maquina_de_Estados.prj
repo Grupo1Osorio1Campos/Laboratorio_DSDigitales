@@ -1,0 +1,3 @@
+verilog work "Registro_8bits.v"
+verilog work "FlipFlop_D.v"
+verilog work "Maquina_de_Estados.v"

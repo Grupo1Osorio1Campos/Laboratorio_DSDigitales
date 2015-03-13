@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_1_LDSD\Proyecto_Corto_1.ncd
+OUTFILE=C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_1_LDSD\Proyecto_Corto_1.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_1_LDSD
+LICENSE=WebPack
+USER_INFO=210933652_0_0_533

@@ -1,0 +1,7 @@
+verilog work "seven_segment_mux.v"
+verilog work "Registro_5bits.v"
+verilog work "Maquina_de_Estados.v"
+verilog work "FlipFlop_D.v"
+verilog work "CLK_2.v"
+verilog work "CLK.v"
+verilog work "Proyecto_Corto_1.v"

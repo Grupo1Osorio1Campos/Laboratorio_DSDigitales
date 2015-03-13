@@ -1,0 +1,23 @@
+## SWITCHES##
+NET "rx_en" LOC = "V8" ; //Switch SW6
+NET "rst_i" LOC = "T5" ; //Switch SW7
+
+## LEDS ##
+NET "data_o[0]" LOC = "U16" ; //LED LD0
+NET "data_o[1]" LOC = "V16" ; //LED LD1
+NET "data_o[2]" LOC = "U15" ; //LED LD2
+NET "data_o[3]" LOC = "V15" ; //LED LD3
+NET "data_o[4]" LOC = "M11" ; //LED LD4
+NET "data_o[5]" LOC = "N11" ; //LED LD5
+NET "data_o[6]" LOC = "R11" ; //LED LD6
+NET "data_o[7]" LOC = "T11" ; //LED LD7
+
+
+## USB-HID ##
+NET "ps2_data" LOC = "J13" | IOSTANDARD = "LVCMOS33" | PULLUP;  #Bank = 1, Pin name = IO_L39P_M1A3,             Sch name = PIC-SDI1
+NET "ps2_clk"  LOC = "L12" | IOSTANDARD = "LVCMOS33" | PULLUP;  #Bank = 1, Pin name = IO_L40P_GCLK11_M1A5,      Sch name = PIC-SCK1
+
+## CLK ""0
+NET "clk_i" LOC = "V10" | IOSTANDARD = "LVCMOS33";   #Bank = 2, pin name = IO_L30N_GCLK0_USERCCLK,            Sch name = GCLK
+Net "clk_i" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;

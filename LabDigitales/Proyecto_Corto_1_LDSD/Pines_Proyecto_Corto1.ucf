@@ -1,0 +1,38 @@
+## SWITCHES##
+NET "Temp_i[0]" LOC = "T10" ; //Switch SW0
+NET "Temp_i[1]" LOC = "T9" ; //Switch SW1
+NET "Temp_i[2]" LOC = "V9" ; //Switch SW2
+NET "Temp_i[3]" LOC = "M8" ; //Switch SW3
+NET "Temp_i[4]" LOC = "N8" ; //Switch SW4
+NET "Pres_i" LOC = "U8" ; //Switch SW5
+NET "Ing_i" LOC = "V8" ; //Switch SW6
+NET "rst_i" LOC = "T5" ; //Switch SW7
+
+## LEDS ##
+NET "Temp_o[0]" LOC = "U16" ; //LED LD0
+NET "Temp_o[1]" LOC = "V16" ; //LED LD1
+NET "Temp_o[2]" LOC = "U15" ; //LED LD2
+NET "Temp_o[3]" LOC = "V15" ; //LED LD3
+NET "Temp_o[4]" LOC = "M11" ; //LED LD4
+NET "Pres_o" LOC = "N11" ; //LED LD5
+NET "Ing_o" LOC = "R11" ; //LED LD6
+NET "clk_o" LOC = "T11" ; //LED LD7
+
+## 7 Segmentos ##
+NET "SSegm_o[0]" LOC = "T17" ; //CA
+NET "SSegm_o[1]" LOC = "T18" ; //CB
+NET "SSegm_o[2]" LOC = "U17" ; //CC
+NET "SSegm_o[3]" LOC = "U18" ; //CD
+NET "SSegm_o[4]" LOC = "M14" ; //CE
+NET "SSegm_o[5]" LOC = "N14" ; //CF
+NET "SSegm_o[6]" LOC = "L14" ; //CG
+NET "SSegm_o[7]" LOC = "M13" ; //DP
+NET "anodos_o[0]" LOC = "P17" ; //AN3
+NET "anodos_o[1]" LOC = "P18" ; //AN2
+NET "anodos_o[2]" LOC = "N15" ; //AN1
+NET "anodos_o[3]" LOC = "N16" ; //AN0
+
+## CLK ""0
+NET "clk_i" LOC = "V10" ; //CLK
+//NET "clk_i" TNM_NET = sys_clk_pin; //CLK
+//TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 1 kHz; //CLK

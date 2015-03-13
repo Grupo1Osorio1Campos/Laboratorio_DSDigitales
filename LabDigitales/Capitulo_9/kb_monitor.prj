@@ -1,8 +1,0 @@
-verilog work "D:/fpga_vlog_src/ch08/list_ch08_03_uart_tx.v"
-verilog work "D:/fpga_vlog_src/ch08/list_ch08_01_uart_rx.v"
-verilog work "D:/fpga_vlog_src/ch04/list_ch04_20_fifo.v"
-verilog work "D:/fpga_vlog_src/ch04/list_ch04_11_mod_m_counter.v"
-verilog work "D:/fpga_vlog_src/ch09/list_ch09_01_ps2_rx.v"
-verilog work "D:/fpga_vlog_src/ch08/list_ch08_04_uart.v"
-verilog work "../Proyecto_Corto_2_LDSD/CLK_2.v"
-verilog work "D:/fpga_vlog_src/ch09/list_ch09_02_kb_monitor.v"

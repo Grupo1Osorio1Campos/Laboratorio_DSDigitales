@@ -1,0 +1,3 @@
+verilog work "Registro_8bits.v"
+verilog work "Prueba_Registro.v"
+verilog work "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
