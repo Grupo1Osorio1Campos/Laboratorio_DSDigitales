@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: Prueba_1.prj
 
@@ -105,13 +105,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_2_LDSD\ps2.v" into library work
+Analyzing Verilog file "\\psf\home\Documents\I semestre 2015\Lab. Sistemas Digitales\Laboratorio_DSDigitales\LabDigitales\Proyecto_Corto_2_LDSD\ps2.v" into library work
 Parsing module <ps2>.
-Analyzing Verilog file "C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_2_LDSD\cnvrsr_k_c.v" into library work
+Analyzing Verilog file "\\psf\home\Documents\I semestre 2015\Lab. Sistemas Digitales\Laboratorio_DSDigitales\LabDigitales\Proyecto_Corto_2_LDSD\cnvrsr_k_c.v" into library work
 Parsing module <cnvrsr_k_c>.
-Analyzing Verilog file "C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_1_LDSD\CLK_2.v" into library work
+Analyzing Verilog file "\\psf\home\Documents\I semestre 2015\Lab. Sistemas Digitales\Laboratorio_DSDigitales\LabDigitales\Proyecto_Corto_1_LDSD\CLK_2.v" into library work
 Parsing module <CLK_2>.
-Analyzing Verilog file "C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_2_LDSD\Prueba_1.v" into library work
+Analyzing Verilog file "\\psf\home\Documents\I semestre 2015\Lab. Sistemas Digitales\Laboratorio_DSDigitales\LabDigitales\Proyecto_Corto_2_LDSD\Prueba_1.v" into library work
 Parsing module <Prueba_1>.
 
 =========================================================================
@@ -131,13 +131,13 @@ Elaborating module <CLK_2>.
 =========================================================================
 
 Synthesizing Unit <Prueba_1>.
-    Related source file is "C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_2_LDSD\Prueba_1.v".
+    Related source file is "\\psf\home\Documents\I semestre 2015\Lab. Sistemas Digitales\Laboratorio_DSDigitales\LabDigitales\Proyecto_Corto_2_LDSD\Prueba_1.v".
     Summary:
 	no macro.
 Unit <Prueba_1> synthesized.
 
 Synthesizing Unit <ps2>.
-    Related source file is "C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_2_LDSD\ps2.v".
+    Related source file is "\\psf\home\Documents\I semestre 2015\Lab. Sistemas Digitales\Laboratorio_DSDigitales\LabDigitales\Proyecto_Corto_2_LDSD\ps2.v".
     Found 2-bit register for signal <estado_actl>.
     Found 4-bit register for signal <n_reg>.
     Found 11-bit register for signal <b_reg>.
@@ -165,7 +165,7 @@ Synthesizing Unit <ps2>.
 Unit <ps2> synthesized.
 
 Synthesizing Unit <cnvrsr_k_c>.
-    Related source file is "C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_2_LDSD\cnvrsr_k_c.v".
+    Related source file is "\\psf\home\Documents\I semestre 2015\Lab. Sistemas Digitales\Laboratorio_DSDigitales\LabDigitales\Proyecto_Corto_2_LDSD\cnvrsr_k_c.v".
     Found 4-bit register for signal <EA>.
     Found finite state machine <FSM_1> for signal <EA>.
     -----------------------------------------------------------------------
@@ -186,7 +186,7 @@ Synthesizing Unit <cnvrsr_k_c>.
 Unit <cnvrsr_k_c> synthesized.
 
 Synthesizing Unit <CLK_2>.
-    Related source file is "C:\Users\Javier\Desktop\LabDigitales\Proyecto_Corto_1_LDSD\CLK_2.v".
+    Related source file is "\\psf\home\Documents\I semestre 2015\Lab. Sistemas Digitales\Laboratorio_DSDigitales\LabDigitales\Proyecto_Corto_1_LDSD\CLK_2.v".
     Found 16-bit register for signal <counter>.
     Found 1-bit register for signal <clk_o>.
     Found 16-bit adder for signal <counter[15]_GND_4_o_add_1_OUT> created at line 41.
@@ -310,15 +310,15 @@ Top Level Output File Name         : Prueba_1.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 150
+# BELS                             : 156
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 15
-#      LUT2                        : 25
-#      LUT3                        : 14
-#      LUT4                        : 5
-#      LUT5                        : 8
-#      LUT6                        : 47
+#      LUT2                        : 26
+#      LUT3                        : 17
+#      LUT4                        : 4
+#      LUT5                        : 10
+#      LUT6                        : 48
 #      MUXCY                       : 15
 #      MUXF7                       : 1
 #      VCC                         : 1
@@ -340,14 +340,14 @@ Selected Device : 6slx16csg324-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:              45  out of  18224     0%  
- Number of Slice LUTs:                  116  out of   9112     1%  
-    Number used as Logic:               116  out of   9112     1%  
+ Number of Slice LUTs:                  122  out of   9112     1%  
+    Number used as Logic:               122  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    123
-   Number with an unused Flip Flop:      78  out of    123    63%  
-   Number with an unused LUT:             7  out of    123     5%  
-   Number of fully used LUT-FF pairs:    38  out of    123    30%  
+ Number of LUT Flip Flop pairs used:    129
+   Number with an unused Flip Flop:      84  out of    129    65%  
+   Number with an unused LUT:             7  out of    129     5%  
+   Number of fully used LUT-FF pairs:    38  out of    129    29%  
    Number of unique control sets:         3
 
 IO Utilization: 
@@ -393,7 +393,7 @@ Speed Grade: -2
 
    Minimum period: 4.537ns (Maximum Frequency: 220.410MHz)
    Minimum input arrival time before clock: 5.192ns
-   Maximum output required time after clock: 9.556ns
+   Maximum output required time after clock: 8.989ns
    Maximum combinational path delay: 5.448ns
 
 Timing Details:
@@ -416,7 +416,7 @@ Delay:               4.537ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              2   0.525   1.181  D/counter_11 (D/counter_11)
-     LUT6:I0->O            1   0.254   0.790  D/counter[15]_PWR_5_o_equal_1_o<15>4_SW0 (N25)
+     LUT6:I0->O            1   0.254   0.790  D/counter[15]_PWR_5_o_equal_1_o<15>4_SW0 (N13)
      LUT6:I4->O           17   0.250   1.209  D/counter[15]_PWR_5_o_equal_1_o<15>4 (D/counter[15]_PWR_5_o_equal_1_o)
      LUT2:I1->O            1   0.254   0.000  D/Mcount_counter_eqn_01 (D/Mcount_counter_eqn_0)
      FDC:D                     0.074          D/counter_0
@@ -460,8 +460,8 @@ Offset:              5.192ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            17   1.328   1.664  rx_en_IBUF (rx_en_o_OBUF)
-     LUT6:I0->O            1   0.254   0.682  A/estado_actl_FSM_FFd1-In1_SW4_F (N61)
-     LUT3:I2->O            1   0.254   0.682  A/estado_actl_FSM_FFd1-In1_SW41 (N33)
+     LUT6:I0->O            1   0.254   0.682  A/estado_actl_FSM_FFd1-In1_SW4_F (N49)
+     LUT3:I2->O            1   0.254   0.682  A/estado_actl_FSM_FFd1-In1_SW41 (N21)
      LUT6:I5->O            1   0.254   0.000  A/b_reg_9_rstpot (A/b_reg_9_rstpot)
      FDC:D                     0.074          A/b_reg_9
     ----------------------------------------
@@ -509,26 +509,25 @@ Offset:              5.317ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
-  Total number of paths / destination ports: 262 / 10
+  Total number of paths / destination ports: 255 / 10
 -------------------------------------------------------------------------
-Offset:              9.556ns (Levels of Logic = 5)
+Offset:              8.989ns (Levels of Logic = 4)
   Source:            A/b_reg_2 (FF)
-  Destination:       codigo_o<3> (PAD)
+  Destination:       codigo_o<2> (PAD)
   Source Clock:      clk_i rising
 
-  Data Path: A/b_reg_2 to codigo_o<3>
+  Data Path: A/b_reg_2 to codigo_o<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             17   0.525   1.639  A/b_reg_2 (A/b_reg_2)
+     FDC:C->Q             19   0.525   1.691  A/b_reg_2 (A/b_reg_2)
      LUT6:I1->O            1   0.254   1.112  B/out12 (B/out11)
-     LUT6:I1->O            5   0.254   0.841  B/out14 (B/n0059)
-     LUT6:I5->O            2   0.254   0.834  B/codigo_o<6>1 (B/codigo_o<6>1)
-     LUT6:I4->O            1   0.250   0.681  B/codigo_o<5>1 (codigo_o_3_OBUF)
-     OBUF:I->O                 2.912          codigo_o_3_OBUF (codigo_o<3>)
+     LUT6:I1->O            6   0.254   1.306  B/out14 (B/n0059)
+     LUT5:I0->O            1   0.254   0.681  B/codigo_o<8>2 (codigo_o_0_OBUF)
+     OBUF:I->O                 2.912          codigo_o_0_OBUF (codigo_o<0>)
     ----------------------------------------
-    Total                      9.556ns (4.449ns logic, 5.107ns route)
-                                       (46.6% logic, 53.4% route)
+    Total                      8.989ns (4.199ns logic, 4.790ns route)
+                                       (46.7% logic, 53.3% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -573,11 +572,11 @@ clk_i          |    4.537|         |         |         |
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.52 secs
+Total CPU time to Xst completion: 6.14 secs
  
 --> 
 
-Total memory usage is 183856 kilobytes
+Total memory usage is 188940 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

@@ -125,7 +125,7 @@ begin
        8'h49: codigo_o = 8'b10000000;   // .
        8'h4a: codigo_o = 8'b10000000;   // /
 
-       8'h29: codigo_o = 8'b10000000;   // (space)
+       8'h29: codigo_o = 8'b11111110;   // (space)
        8'h5a: codigo_o = 8'b10000000;   // (enter, cr)
        8'h66: codigo_o = 8'b10000000;   // (backspace)
        default: codigo_o = 8'b10111111; // *
