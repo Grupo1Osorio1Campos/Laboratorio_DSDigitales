@@ -428,3 +428,12 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pines_Prueba.ucf -p xc6slx16-c
 map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Prueba_1_map.ncd Prueba_1.ngd Prueba_1.pcf 
 par -w -intstyle ise -ol high -mt off Prueba_1_map.ncd Prueba_1.ncd Prueba_1.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Prueba_1.twx Prueba_1.ncd -o Prueba_1.twr Prueba_1.pcf -ucf Pines_Prueba.ucf 
+xst -intstyle ise -ifn "Z:/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/Prueba_1.xst" -ofn "Z:/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/Prueba_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pines_Prueba.ucf -p xc6slx16-csg324-2 "Prueba_1.ngc" Prueba_1.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Prueba_1_map.ncd Prueba_1.ngd Prueba_1.pcf 
+par -w -intstyle ise -ol high -mt off Prueba_1_map.ncd Prueba_1.ncd Prueba_1.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Prueba_1.twx Prueba_1.ncd -o Prueba_1.twr Prueba_1.pcf -ucf Pines_Prueba.ucf 
+xst -intstyle ise -ifn "Z:/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/Prueba_1.xst" -ofn "Z:/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/Prueba_1.syr" 
+xst -intstyle ise -ifn "Z:/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/Prueba_1.xst" -ofn "Z:/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/Prueba_1.syr" 
+xst -intstyle ise -ifn "Z:/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/Prueba_1.xst" -ofn "Z:/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/Prueba_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pines_Prueba.ucf -p xc6slx16-csg324-2 "Prueba_1.ngc" Prueba_1.ngd  

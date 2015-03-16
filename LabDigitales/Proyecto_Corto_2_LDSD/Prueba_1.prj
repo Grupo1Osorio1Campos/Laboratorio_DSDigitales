@@ -1,4 +1,7 @@
 verilog work "ps2.v"
+verilog work "maquina_de_estados_teclado.v"
 verilog work "cnvrsr_k_c.v"
+verilog work "../Proyecto_Corto_1_LDSD/Registro_5bits.v"
+verilog work "../Proyecto_Corto_1_LDSD/FlipFlop_D.v"
 verilog work "../Proyecto_Corto_1_LDSD/CLK_2.v"
 verilog work "Prueba_1.v"

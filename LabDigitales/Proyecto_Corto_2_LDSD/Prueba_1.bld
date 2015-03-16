@@ -14,6 +14,78 @@ Done.
 Annotating constraints to design from ucf file "Pines_Prueba.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem:119 - Constraint <NET "codigo_o[0]" LOC = "T17" ;>
+   [Pines_Prueba.ucf(22)]: This constraint cannot be distributed from the design
+   objects matching 'NET "codigo_o[0]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "codigo_o[0]" LOC = "T17" ;> [Pines_Prueba.ucf(22)]' could not be found
+   and so the Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "codigo_o[1]" LOC = "T18" ;>
+   [Pines_Prueba.ucf(23)]: This constraint cannot be distributed from the design
+   objects matching 'NET "codigo_o[1]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "codigo_o[1]" LOC = "T18" ;> [Pines_Prueba.ucf(23)]' could not be found
+   and so the Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "codigo_o[2]" LOC = "U17" ;>
+   [Pines_Prueba.ucf(24)]: This constraint cannot be distributed from the design
+   objects matching 'NET "codigo_o[2]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "codigo_o[2]" LOC = "U17" ;> [Pines_Prueba.ucf(24)]' could not be found
+   and so the Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "codigo_o[3]" LOC = "U18" ;>
+   [Pines_Prueba.ucf(25)]: This constraint cannot be distributed from the design
+   objects matching 'NET "codigo_o[3]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "codigo_o[3]" LOC = "U18" ;> [Pines_Prueba.ucf(25)]' could not be found
+   and so the Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "codigo_o[4]" LOC = "M14" ;>
+   [Pines_Prueba.ucf(26)]: This constraint cannot be distributed from the design
+   objects matching 'NET "codigo_o[4]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "codigo_o[4]" LOC = "M14" ;> [Pines_Prueba.ucf(26)]' could not be found
+   and so the Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "codigo_o[5]" LOC = "N14" ;>
+   [Pines_Prueba.ucf(27)]: This constraint cannot be distributed from the design
+   objects matching 'NET "codigo_o[5]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "codigo_o[5]" LOC = "N14" ;> [Pines_Prueba.ucf(27)]' could not be found
+   and so the Locate constraint will be removed.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "codigo_o[6]" LOC = "L14" ;>
+   [Pines_Prueba.ucf(28)]: This constraint cannot be distributed from the design
+   objects matching 'NET "codigo_o[6]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "codigo_o[6]" LOC = "L14" ;> [Pines_Prueba.ucf(28)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "codigo_o[7]" LOC = "M13" ;>
+   [Pines_Prueba.ucf(29)]: NET "codigo_o[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "codigo_o[7]" LOC = "M13" ;> [Pines_Prueba.ucf(29)]' could not be found
+   and so the Locate constraint will be removed.
+
 Done...
 
 Checking expanded design ...
@@ -26,13 +98,14 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     0
-  Number of warnings:   0
+  Number of errors:     1
+  Number of warnings:  15
 
 Total memory usage is 121836 kilobytes
 
-Writing NGD file "Prueba_1.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec
 Total CPU time to NGDBUILD completion:   3 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
 
 Writing NGDBUILD log file "Prueba_1.bld"...

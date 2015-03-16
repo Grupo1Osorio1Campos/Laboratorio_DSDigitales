@@ -56,9 +56,15 @@ always @(posedge clk_i,posedge rst_i) begin
 end
 
 
-
 always @*
 begin
+	if(datotec_o == 8'b11111110)
+	begin
+		Q_o = ign_o;
+		Q1_o = pres_o;
+		temp_o = temp_i;
+		//En = 1'b1;
+	end
 	SE = EA;
 	case (EA)
 		Estado_0: begin
@@ -72,12 +78,12 @@ begin
 		Estado_1: begin
 			if (datotec_o == 8'b11000001)
 			begin
-				ign_o = 1;
+				ign_o = 1'b1;
 				SE=Estado_2;
 			end
 			else if (datotec_o == 8'b10110000)
 			begin
-				ign_o = 0;
+				ign_o = 1'b0;
 				SE=Estado_2;
 			end
 			else
@@ -86,12 +92,12 @@ begin
 		Estado_2: begin
 			if (datotec_o == 8'b10001000)
 			begin
-				pres_o = 1;
+				pres_o = 1'b1;
 				SE=Estado_3;
 			end
 			else if (datotec_o == 8'b10001000)
 			begin
-				pres_o = 0;
+				pres_o = 1'b0;
 				SE=Estado_3;
 			end
 			else
