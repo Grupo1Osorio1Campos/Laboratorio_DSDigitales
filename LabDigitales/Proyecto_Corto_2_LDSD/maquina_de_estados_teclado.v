@@ -58,17 +58,17 @@ end
 
 always @*
 begin
-	if(datotec_o == 8'b11111110)
+	if(datotec_o == 8'b11111110) //se presiona enter para pasar los valores a las salidas
 	begin
-		Q_o = ign_o;
-		Q1_o = pres_o;
-		temp_o = temp_i;
-		//En = 1'b1;
+		Q_o = ign_o;		//salida ignicion
+		Q1_o = pres_o;		// salida presencia
+		temp_o = temp_i;	// salida de temperatura
+		//En = 1'b1;		//enable de la maquina de estados del proyecto anterior
 	end
 	SE = EA;
 	case (EA)
 		Estado_0: begin
-			if (datotec_o == 8'b10000000)
+			if (datotec_o == 8'b10000000) //letra I para iniciar la maquina
 				SE=Estado_1;
 			else
 			begin
@@ -76,12 +76,12 @@ begin
 			end
 		end
 		Estado_1: begin
-			if (datotec_o == 8'b11000001)
+			if (datotec_o == 8'b11000001) // letra B para poner activa la ignicion
 			begin
 				ign_o = 1'b1;
 				SE=Estado_2;
 			end
-			else if (datotec_o == 8'b10110000)
+			else if (datotec_o == 8'b10110000) //numero 3 para desactivar la ignicion
 			begin
 				ign_o = 1'b0;
 				SE=Estado_2;
@@ -90,12 +90,12 @@ begin
 				SE=Estado_1;
 		end
 		Estado_2: begin
-			if (datotec_o == 8'b10001000)
+			if (datotec_o == 8'b10001000) //letra A activar presencia
 			begin
 				pres_o = 1'b1;
 				SE=Estado_3;
 			end
-			else if (datotec_o == 8'b10001000)
+			else if (datotec_o == 8'b10010010) //numero 5 para desactivar la presencia 
 			begin
 				pres_o = 1'b0;
 				SE=Estado_3;
@@ -104,11 +104,11 @@ begin
 				SE=Estado_2;
 		end
 		Estado_3: begin
-			if (datotec_o == 8'b11000110)
+			if (datotec_o == 8'b11000110) //letra C ajustar temperatura
 			begin
 				temp_i=5 'b11111;
 			end
-			else if (datotec_o == 8'b10100001)
+			else if (datotec_o == 8'b10100001) //letra D para temperatura baja
 			begin
 				temp_i=5 'b00100;
 			end

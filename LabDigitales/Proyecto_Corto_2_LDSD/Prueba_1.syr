@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: Prueba_1.prj
 
@@ -203,8 +203,8 @@ Synthesizing Unit <maquina_de_estados_teclado>.
     Found finite state machine <FSM_2> for signal <EA>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
-    | Transitions        | 12                                             |
-    | Inputs             | 7                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 8                                              |
     | Outputs            | 3                                              |
     | Clock              | clk_i (rising_edge)                            |
     | Reset              | rst_i (positive)                               |
@@ -387,17 +387,16 @@ Top Level Output File Name         : Prueba_1.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 132
+# BELS                             : 136
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 15
-#      LUT2                        : 8
-#      LUT3                        : 5
-#      LUT4                        : 6
-#      LUT5                        : 16
-#      LUT6                        : 45
+#      LUT2                        : 7
+#      LUT3                        : 6
+#      LUT4                        : 16
+#      LUT5                        : 15
+#      LUT6                        : 42
 #      MUXCY                       : 15
-#      MUXF7                       : 2
 #      VCC                         : 1
 #      XORCY                       : 16
 # FlipFlops/Latches                : 60
@@ -419,14 +418,14 @@ Selected Device : 6slx16csg324-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:              53  out of  18224     0%  
- Number of Slice LUTs:                   97  out of   9112     1%  
-    Number used as Logic:                97  out of   9112     1%  
+ Number of Slice LUTs:                  103  out of   9112     1%  
+    Number used as Logic:               103  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    114
-   Number with an unused Flip Flop:      61  out of    114    53%  
-   Number with an unused LUT:            17  out of    114    14%  
-   Number of fully used LUT-FF pairs:    36  out of    114    31%  
+ Number of LUT Flip Flop pairs used:    120
+   Number with an unused Flip Flop:      67  out of    120    55%  
+   Number with an unused LUT:            17  out of    120    14%  
+   Number of fully used LUT-FF pairs:    36  out of    120    30%  
    Number of unique control sets:         9
 
 IO Utilization: 
@@ -459,8 +458,8 @@ Clock Information:
 Clock Signal                                                            | Clock buffer(FF name)  | Load  |
 ------------------------------------------------------------------------+------------------------+-------+
 clk_i                                                                   | IBUF+BUFG              | 52    |
-C/datotec_o[7]_PWR_5_o_equal_2_o(C/datotec_o[7]_PWR_5_o_equal_2_o<7>2:O)| NONE(*)(C/temp_o_4)    | 3     |
-C/_n0066(C/Mmux__n006611:O)                                             | NONE(*)(C/temp_i_4)    | 1     |
+C/datotec_o[7]_PWR_5_o_equal_2_o(C/datotec_o[7]_PWR_5_o_equal_2_o<7>1:O)| NONE(*)(C/temp_o_4)    | 3     |
+C/_n0068(C/Mmux__n006811:O)                                             | NONE(*)(C/temp_i_4)    | 1     |
 C/EA[3]_GND_4_o_equal_21_o(C/EA_EA[3]_GND_4_o_equal_21_o1:O)            | NONE(*)(C/ign_o)       | 1     |
 C/EA[3]_GND_4_o_equal_22_o(C/EA_EA[3]_GND_4_o_equal_22_o1:O)            | NONE(*)(C/pres_o)      | 1     |
 D/clk_o                                                                 | NONE(B/EA_FSM_FFd1)    | 2     |
@@ -478,7 +477,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 6.146ns (Maximum Frequency: 162.707MHz)
+   Minimum period: 6.239ns (Maximum Frequency: 160.282MHz)
    Minimum input arrival time before clock: 4.002ns
    Maximum output required time after clock: 5.317ns
    Maximum combinational path delay: 5.043ns
@@ -489,27 +488,27 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_i'
-  Clock period: 6.146ns (frequency: 162.707MHz)
-  Total number of paths / destination ports: 1074 / 58
+  Clock period: 6.239ns (frequency: 160.282MHz)
+  Total number of paths / destination ports: 1161 / 58
 -------------------------------------------------------------------------
-Delay:               6.146ns (Levels of Logic = 4)
-  Source:            A/b_reg_1 (FF)
-  Destination:       C/EA_FSM_FFd1 (FF)
+Delay:               6.239ns (Levels of Logic = 4)
+  Source:            A/b_reg_6 (FF)
+  Destination:       C/EA_FSM_FFd2 (FF)
   Source Clock:      clk_i rising
   Destination Clock: clk_i rising
 
-  Data Path: A/b_reg_1 to C/EA_FSM_FFd1
+  Data Path: A/b_reg_6 to C/EA_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            16   0.525   1.612  A/b_reg_1 (A/b_reg_1)
-     LUT6:I1->O            7   0.254   1.018  B/out14_SW1 (N16)
-     LUT5:I3->O            7   0.250   1.138  B/codigo_o<5>2 (codigo_o<3>)
-     LUT5:I2->O            1   0.235   0.790  C/EA_FSM_FFd1-In11_SW2 (N45)
-     LUT6:I4->O            1   0.250   0.000  C/EA_FSM_FFd1-In11 (C/EA_FSM_FFd1-In)
+     FDCE:C->Q            15   0.525   1.610  A/b_reg_6 (A/b_reg_6)
+     LUT6:I0->O            4   0.254   0.912  B/out14_SW1 (N21)
+     LUT4:I2->O            3   0.250   0.766  B/out14 (B/n0059)
+     LUT6:I5->O            7   0.254   1.340  B/codigo_o<7>2 (codigo_o<1>)
+     LUT6:I1->O            1   0.254   0.000  C/EA_FSM_FFd1-In11 (C/EA_FSM_FFd1-In)
      FDC:D                     0.074          C/EA_FSM_FFd1
     ----------------------------------------
-    Total                      6.146ns (1.588ns logic, 4.558ns route)
+    Total                      6.239ns (1.611ns logic, 4.628ns route)
                                        (25.8% logic, 74.2% route)
 
 =========================================================================
@@ -640,7 +639,7 @@ Clock to Setup on destination clock C/EA[3]_GND_4_o_equal_21_o
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |    7.793|         |
+clk_i          |         |         |    8.219|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock C/EA[3]_GND_4_o_equal_22_o
@@ -648,15 +647,15 @@ Clock to Setup on destination clock C/EA[3]_GND_4_o_equal_22_o
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |    8.027|         |
+clk_i          |         |         |    9.185|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock C/_n0066
+Clock to Setup on destination clock C/_n0068
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |    6.444|         |
+clk_i          |         |         |    6.960|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock C/datotec_o[7]_PWR_5_o_equal_2_o
@@ -666,7 +665,7 @@ Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------+---------+---------+---------+---------+
 C/EA[3]_GND_4_o_equal_21_o|         |         |    1.298|         |
 C/EA[3]_GND_4_o_equal_22_o|         |         |    1.298|         |
-C/_n0066                  |         |         |    1.298|         |
+C/_n0068                  |         |         |    1.298|         |
 --------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock D/clk_o
@@ -683,18 +682,18 @@ Clock to Setup on destination clock clk_i
 Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------+---------+---------+---------+---------+
 C/datotec_o[7]_PWR_5_o_equal_2_o|         |    1.458|         |         |
-clk_i                           |    6.146|         |         |         |
+clk_i                           |    6.239|         |         |         |
 --------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.94 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.04 secs
  
 --> 
 
-Total memory usage is 189132 kilobytes
+Total memory usage is 196876 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   12 (   0 filtered)
