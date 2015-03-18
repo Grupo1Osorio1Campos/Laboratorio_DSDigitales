@@ -21,11 +21,11 @@
     </file>
     <file xil_pn:name="cnvrsr_k_c.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
     </file>
     <file xil_pn:name="Prueba_1.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
     </file>
     <file xil_pn:name="Pines_Prueba.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
@@ -40,7 +40,7 @@
     </file>
     <file xil_pn:name="../Proyecto_Corto_1_LDSD/CLK_2.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="71"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
     </file>
     <file xil_pn:name="detector_flanco.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="70"/>
@@ -74,23 +74,23 @@
     </file>
     <file xil_pn:name="maquina_de_estados_teclado.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="103"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="103"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
     </file>
     <file xil_pn:name="../Proyecto_Corto_1_LDSD/Maquina_de_Estados.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="104"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="104"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../Proyecto_Corto_1_LDSD/Proyecto_Corto_1.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="105"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="105"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../Proyecto_Corto_1_LDSD/Registro_5bits.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="106"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="106"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
     </file>
     <file xil_pn:name="../Proyecto_Corto_1_LDSD/FlipFlop_D.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="107"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="107"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
     </file>
   </files>
 

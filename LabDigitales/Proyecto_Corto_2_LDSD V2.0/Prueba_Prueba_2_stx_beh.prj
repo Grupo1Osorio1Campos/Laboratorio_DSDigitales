@@ -1,0 +1,8 @@
+verilog isim_temp "seven_segment_mux.v"
+verilog isim_temp "ps2.v"
+verilog isim_temp "Maquina_de_Estados.v"
+verilog isim_temp "CLK_2.v"
+verilog isim_temp "carga_teclado_2.v"
+verilog isim_temp "Prueba_2.v"
+verilog isim_temp "Prueba_Prueba_2.v"
+verilog isim_temp "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,51 @@
+## SWITCHES##
+#NET "Temp_i[0]" LOC = "T10" ; //Switch SW0
+#NET "Temp_i[1]" LOC = "T9" ; //Switch SW1
+#NET "Temp_i[2]" LOC = "V9" ; //Switch SW2
+#NET "Temp_i[3]" LOC = "M8" ; //Switch SW3
+#NET "Temp_i[4]" LOC = "N8" ; //Switch SW4
+#NET "Pres_i" LOC = "U8" ; //Switch SW5
+NET "rx_en" LOC = "V8" ; //Switch SW6
+NET "rst_i" LOC = "T5" ; //Switch SW7
+
+## LEDS ##
+NET "Temp_o[0]" LOC = "U16" ; //LED LD0
+NET "Temp_o[1]" LOC = "V16" ; //LED LD1
+NET "Temp_o[2]" LOC = "U15" ; //LED LD2
+NET "Temp_o[3]" LOC = "V15" ; //LED LD3
+NET "Temp_o[4]" LOC = "M11" ; //LED LD4
+NET "Pres_o" LOC = "N11" ; //LED LD5
+NET "Ing_o" LOC = "R11" ; //LED LD6
+NET "data_o_o" LOC = "T11" ; //LED LD7
+
+## 7 Segmentos ##
+NET "codigo_o[0]" LOC = "T17" ; //CA
+NET "codigo_o[1]" LOC = "T18" ; //CB
+NET "codigo_o[2]" LOC = "U17" ; //CC
+NET "codigo_o[3]" LOC = "U18" ; //CD
+NET "codigo_o[4]" LOC = "M14" ; //CE
+NET "codigo_o[5]" LOC = "N14" ; //CF
+NET "codigo_o[6]" LOC = "L14" ; //CG
+NET "codigo_o[7]" LOC = "M13" ; //DP
+NET "anodos_o[0]" LOC = "P17" ; //AN3
+NET "anodos_o[1]" LOC = "P18" ; //AN2
+NET "anodos_o[2]" LOC = "N15" ; //AN1
+NET "anodos_o[3]" LOC = "N16" ; //AN0
+
+## USB-HID ##
+#NET "ps2_data" LOC = "J13" | PULLUP;
+#NET "ps2_clk"  LOC = "L12" | PULLUP;
+NET "ps2_data" LOC = "J13" | IOSTANDARD = "LVCMOS33" | PULLUP;  #Bank = 1, Pin name = IO_L39P_M1A3,             Sch name = PIC-SDI1
+NET "ps2_clk"  LOC = "L12" | IOSTANDARD = "LVCMOS33" | PULLUP;  #Bank = 1, Pin name = IO_L40P_GCLK11_M1A5,      Sch name = PIC-SCK1
+
+
+#NET "PS2MouseData"   LOC = "K14" | IOSTANDARD = "LVCMOS33" | PULLUP;   #Bank = 1, Pin name = IO_L39N_M1ODT,            Sch name = PIC-SDO1
+#NET "PS2MouseClk"    LOC = "L13" | IOSTANDARD = "LVCMOS33" | PULLUP;   #Bank = 1, Pin name = IO_L40N_GCLK10_M1A6,      Sch name = PIC-SS1
+#NET "PicGpio<0>"     LOC = "L16" | IOSTANDARD = "LVCMOS33";   #Bank = 1, Pin name = IO_L42N_GCLK6_TRDY1_M1LDM,         Sch name = PIC-GPIO0
+#NET "PicGpio<1>"     LOC = "H17" | IOSTANDARD = "LVCMOS33";   #Bank = 1, Pin name = IO_L43P_GCLK5_M1DQ4,               Sch name = PIC-GPIO1
+## Usb-RS232 interface
+#NET "RsRx"           LOC = "N17" | IOSTANDARD = "LVCMOS33";   #Bank = 1, Pin name = IO_L48P_HDC_M1DQ8,                 Sch name = MCU-RX
+#NET "RsTx"           LOC = "N18" | IOSTANDARD = "LVCMOS33";   #Bank = 1, Pin name = IO_L48N_M1DQ9,                     Sch name = MCU-TX
+
+## CLK ""0
+NET "clk_i" LOC = "V10";

@@ -1,0 +1,26 @@
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.xst" -ofn "C:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_LDSD/ps2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines_prueba2.ucf -p xc6slx16-csg324-2 ps2.ngc ps2.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ps2_map.ncd ps2.ngd ps2.pcf 
+par -w -intstyle ise -ol high -mt off ps2_map.ncd ps2.ncd ps2.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ps2.twx ps2.ncd -o ps2.twr ps2.pcf -ucf pines_prueba2.ucf 
+bitgen -intstyle ise -f ps2.ut ps2.ncd 

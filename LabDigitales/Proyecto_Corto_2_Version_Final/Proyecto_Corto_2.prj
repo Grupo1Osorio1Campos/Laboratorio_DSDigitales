@@ -1,0 +1,6 @@
+verilog work "seven_segment_mux.v"
+verilog work "ps2.v"
+verilog work "Maquina_de_Estados.v"
+verilog work "CLK_2.v"
+verilog work "carga_teclado_2.v"
+verilog work "Proyecto_Corto_2.v"

@@ -141,13 +141,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1426018963" xil_pn:in_ck="2321090308827353743" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5062273988737949057" xil_pn:start_ts="1426018956">
+    <transform xil_pn:end_ts="1426549315" xil_pn:in_ck="3023530002877530293" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5062273988737949057" xil_pn:start_ts="1426549298">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Prueba_1.lso"/>
       <outfile xil_pn:name="Prueba_1.ngc"/>
       <outfile xil_pn:name="Prueba_1.ngr"/>
@@ -168,7 +165,8 @@
     <transform xil_pn:end_ts="1426018991" xil_pn:in_ck="468634883049222137" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2485723939536448659" xil_pn:start_ts="1426018986">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Prueba_1.bld"/>
       <outfile xil_pn:name="Prueba_1.ngd"/>
       <outfile xil_pn:name="Prueba_1_ngdbuild.xrpt"/>
@@ -213,6 +211,8 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Prueba_1.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="prueba_1.bgn"/>

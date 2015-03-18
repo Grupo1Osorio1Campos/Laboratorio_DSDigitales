@@ -1,0 +1,3 @@
+verilog work "Registro_5bits.v"
+verilog work "FlipFlop_D.v"
+verilog work "carga_teclado_2.v"

@@ -18,11 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module maquina_de_estados_teclado(rst_i, clk_i,datotec_o,Q_o,Q1_o,temp_o);
+module maquina_de_estados_teclado(rst_i, clk_i,datotec_o,Q_o,Q1_o,temp_o,En);
 input wire rst_i, clk_i; //Entradas: Reset,Reloj,Ignición del vehiculo,presencia niño.
 input wire [7:0] datotec_o; //Entrada: Temperatura del automovil con resolución de 8 bits.
-output reg Q_o,Q1_o;
-output reg [4:0] temp_o; //Salidas: Alarma sonora, Elementos mecánicos como ventilación y/o ventanas.
+output wire Q_o,Q1_o;
+output wire [4:0] temp_o; //Salidas: Alarma sonora, Elementos mecánicos como ventilación y/o ventanas.
+output wire En;
 
 //reg Alarm_o_o,Elect_o_o;
 //output reg status
@@ -42,6 +43,7 @@ Estado_sobrante_6 = 4'h6, // Estado 6, Sobrante;
 Estado_sobrante_7 = 4'h7; // Estado 7, Sobrante;
 
 // Variables tipo registro 
+reg En1;
 reg [3:0] EA;
 reg [3:0] SE; //SE = Estado Actual.
 reg pres_o,ign_o;
@@ -60,11 +62,15 @@ always @*
 begin
 	if(datotec_o == 8'b11111110) //se presiona enter para pasar los valores a las salidas
 	begin
-		Q_o = ign_o;		//salida ignicion
-		Q1_o = pres_o;		// salida presencia
-		temp_o = temp_i;	// salida de temperatura
-		//En = 1'b1;		//enable de la maquina de estados del proyecto anterior
+		En1 = 1'b1;		//enable de la maquina de estados del proyecto anterior y de los registros
 	end
+	else 
+		begin
+			En1 = 1'b0;
+		end
+	temp_i = 5'b00000;
+	pres_o = 1'b0;
+	ign_o = 1'b0;
 	SE = EA;
 	case (EA)
 		Estado_0: begin
@@ -81,12 +87,8 @@ begin
 				ign_o = 1'b1;
 				SE=Estado_2;
 			end
-			else if (datotec_o == 8'b10110000) //numero 3 para desactivar la ignicion
-			begin
-				ign_o = 1'b0;
-				SE=Estado_2;
-			end
 			else
+				ign_o = 1'b0;
 				SE=Estado_1;
 		end
 		Estado_2: begin
@@ -95,12 +97,8 @@ begin
 				pres_o = 1'b1;
 				SE=Estado_3;
 			end
-			else if (datotec_o == 8'b10010010) //numero 5 para desactivar la presencia 
-			begin
-				pres_o = 1'b0;
-				SE=Estado_3;
-			end
 			else
+				pres_o = 1'b0;
 				SE=Estado_2;
 		end
 		Estado_3: begin
@@ -118,5 +116,10 @@ begin
 		default: SE = Estado_0;
 	endcase
 end
+
+assign En = En1;
+assign Q_o = ign_o;		//salida ignicion
+assign Q1_o = pres_o;		// salida presencia
+assign temp_o [4:0] = temp_i[4:0];	// salida de temperatura
 
 endmodule
