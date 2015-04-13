@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_Version_Final
+vPrueba_UA
+Z0 !s110 1428960620
+!i10b 1
+!s100 QNH4_]15z=D5j[Vz2BYP>1
+I9?>^ZggL3@HWDeP]h>D4T0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Javier/Desktop/LabDigitales/Proyecto1Filtro
+w1428960617
+8C:/Users/Javier/Desktop/LabDigitales/Proyecto1Filtro/Prueba_UA.v
+FC:/Users/Javier/Desktop/LabDigitales/Proyecto1Filtro/Prueba_UA.v
+L0 25
+Z3 OP;L;10.4;61
+r1
+!s85 0
+31
+!s108 1428960620.531000
+!s107 C:/Users/Javier/Desktop/LabDigitales/Proyecto1Filtro/Prueba_UA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Desktop/LabDigitales/Proyecto1Filtro/Prueba_UA.v|
+!s101 -O0
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@prueba_@u@a
+vunidad_aritmetica
+R0
+!i10b 1
+!s100 e@Z7cHX>]Bk86PK;_6jAL2
+IZ7dI[c3_]WBCN:O3ZghXI2
+R1
+R2
+w1428960558
+8C:\Users\Javier\Desktop\LabDigitales\Proyecto1Filtro\unidad_aritmetica.v
+FC:\Users\Javier\Desktop\LabDigitales\Proyecto1Filtro\unidad_aritmetica.v
+L0 21
+R3
+r1
+!s85 0
+31
+!s108 1428960620.640000
+!s107 C:\Users\Javier\Desktop\LabDigitales\Proyecto1Filtro\unidad_aritmetica.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Javier\Desktop\LabDigitales\Proyecto1Filtro\unidad_aritmetica.v|
+!s101 -O0
+!i113 1
+R4
