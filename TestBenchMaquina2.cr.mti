@@ -1,0 +1,15 @@
+{//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_1_LDSD/FlipFlop_D.v} {1 {vlog -work work -stats=none {//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_1_LDSD/FlipFlop_D.v}
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module FlipFlop_D
+
+Top level modules:
+	FlipFlop_D
+
+} {} {}} {//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/CLK_2.v} {1 {vlog -work work -stats=none {//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_LDSD/CLK_2.v}
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module CLK_2
+
+Top level modules:
+	CLK_2
+
+} {} {}}

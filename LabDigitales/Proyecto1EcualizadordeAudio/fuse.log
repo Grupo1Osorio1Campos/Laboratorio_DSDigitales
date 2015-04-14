@@ -1,0 +1,11 @@
+Running: C:\Windows\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o //psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/adc_test_isim_beh.exe -prj //psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/adc_test_beh.prj work.adc_test work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/../Proyecto_Corto_2_Version_Final/CLK.v" into library work
+Analyzing Verilog file "//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/adc_eq.v" into library work
+Analyzing Verilog file "//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/adc_top.v" into library work
+Analyzing Verilog file "C:/Windows/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/adc_test.vhd" into library work
+ERROR:HDLCompiler:1091 - "Unknown" Line 0: Save failed due to mkdir failure

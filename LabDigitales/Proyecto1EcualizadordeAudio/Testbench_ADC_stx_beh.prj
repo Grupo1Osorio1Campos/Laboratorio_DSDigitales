@@ -1,0 +1,5 @@
+verilog isim_temp "../Proyecto_Corto_2_Version_Final/CLK.v"
+verilog isim_temp "adc_eq.v"
+verilog isim_temp "adc_top.v"
+verilog isim_temp "Testbench_ADC.v"
+verilog isim_temp "C:/Windows/14.7/ISE_DS/ISE//verilog/src/glbl.v"

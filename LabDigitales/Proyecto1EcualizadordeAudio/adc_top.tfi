@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+adc_top instance_name (
+    .clk_i(clk_i), 
+    .rst_i(rst_i), 
+    .data_i(data_i), 
+    .cs_sng(cs_sng), 
+    .clk_o(clk_o), 
+    .garg(garg), 
+    .data_o(data_o)
+    );
+
+
