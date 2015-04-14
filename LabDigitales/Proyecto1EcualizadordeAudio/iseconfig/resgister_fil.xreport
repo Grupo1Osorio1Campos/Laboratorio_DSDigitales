@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-14T13:38:40</DateModified>
+  <DateModified>2015-04-14T13:48:01</DateModified>
   <ModuleName>resgister_fil</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Javier/Desktop/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/iseconfig/resgister_fil.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Javier/Desktop/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Javier/Desktop/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-14T13:38:39</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
