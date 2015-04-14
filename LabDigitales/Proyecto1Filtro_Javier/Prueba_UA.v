@@ -46,8 +46,8 @@ module Prueba_UA;
 	
 	initial begin
 		// Initialize Inputs
-		a = 25'sb1_1111_1111_1111_0101_0101_0101;
-		b = 25'sb0_0000_0000_0000_1010_1010_1011;
+		a = 25'sb0_1010_1010_1010_1010_1010_1010;
+		b = 25'sb1_0101_0101_0101_0101_0101_0110;
 		//func = 3'h0;
 
 		// Wait 100 ns for global reset to finish

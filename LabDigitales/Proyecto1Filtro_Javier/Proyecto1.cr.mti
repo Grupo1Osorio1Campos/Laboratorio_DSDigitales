@@ -1,0 +1,8 @@
+C:/Users/Javier/Desktop/LabDigitales/Proyecto1Filtro/unidad_aritmetica.v {1 {vlog -work work -stats=none C:/Users/Javier/Desktop/LabDigitales/Proyecto1Filtro/unidad_aritmetica.v
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module unidad_aritmetica
+
+Top level modules:
+	unidad_aritmetica
+
+} {} {}}
