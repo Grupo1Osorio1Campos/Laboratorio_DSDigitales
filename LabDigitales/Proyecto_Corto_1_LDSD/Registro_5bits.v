@@ -18,11 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Registro_5bits(rst_i, clk_i,D_i,Q_o);
+module Registro_5bits(rst_i, clk_i,D_i,Q1_o);
 input rst_i, clk_i;
-input [4:0] D_i;
-output [4:0] Q_o;
+input wire [4:0] D_i;
+output wire [4:0] Q1_o;
 reg [4:0] Q_o;
+
 
 always @(posedge clk_i or posedge rst_i)
 	if (rst_i)
@@ -30,5 +31,7 @@ always @(posedge clk_i or posedge rst_i)
 	else 
 		if(clk_i)
 		Q_o <= D_i;
+
+assign Q1_o = Q_o;
 
 endmodule 
