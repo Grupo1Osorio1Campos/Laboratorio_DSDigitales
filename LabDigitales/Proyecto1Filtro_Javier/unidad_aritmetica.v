@@ -18,96 +18,55 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module unidad_aritmetica#(parameter largo=24)(a,b,func,y_sal,overflow_o);
+module unidad_aritmetica#(parameter largo=24)(a,b,func,y,y1,overflow);
 input signed [largo:0] a, b;
-input signed [1:0] func;
-output wire signed [largo:0] y_sal;
-output wire signed overflow_o;
+input signed [2:0] func;
+output reg signed [largo:0] y;
+output reg signed overflow;
+output reg [(2*largo+1):0] y1;
 
 localparam 
-suma = 2'h1,
-multiplicacion = 2'h2;
+suma = 3'h1,
+resta = 3'h2, 
+multiplicacion = 3'h3;
 
-reg [largo:0] maxpon,minpon;
-reg [(2*largo+1):0] y1;
-reg [largo:0] y;
-reg overflow;
-
-always@* 
-	begin
-		maxpon = (2**(largo)-1);
-		minpon = -(2**(largo));
-	end
-
-always@*
+always @*
 begin
-	overflow = 1'b0;
 	case (func)
-		suma:
-		begin //suma
+		suma: begin //suma
 		y = a + b;
-		if(a[largo]==1 && b[largo]==1 && y[largo]==0)
-				begin
-				y = minpon;
-				overflow = 1'b1;
-				end
-		else 
-			begin
-				if(a[largo]==0 && b[largo]==0  && y[largo]==1)
-					begin
-					y = maxpon;
-					overflow = 1'b1;
-					end
-				else 
-					begin
-					overflow = 1'b0;
-					end
-			end
 		end
-			
-		multiplicacion: 
-		begin //multiplicacion
-			y1 = a * b;
-			y = y1[40:16];
-			if(a[largo]==1 && b[largo]==1 && y1[largo]==0)
+		
+		resta: begin //resta
+		y = a - b;
+		end
+		
+		multiplicacion: begin //multiplicacion
+		y1 = a * b;
+		y=y1[40:16];
+			if(a[largo]==1 && b[largo]==1 && y[largo]==1)
 				begin
-				y = minpon;
-				overflow = 1'b1;
+				y=25'sb1_1111_1111_1111_1111_1111_1111;
+				overflow=1'b1;
 				end
-			else 
+			if(a[largo]==1 && b[largo]==0  && y[largo]==0)
 				begin
-				if(a[largo]==1 && b[largo]==0  && y1[largo]==0)
-					begin
-					y = minpon;
-					overflow = 1'b1;
-					end
-				else 
-					begin
-					if(a[largo]==0 && b[largo]==1  && y1[largo]==0)
-						begin
-						y = minpon;
-						overflow = 1'b1;
-						end
-					else 
-						begin
-						if(a[largo]==0 && b[largo]==0  && y1[largo]==1)
-							begin
-							y = maxpon;
-							overflow = 1'b1;
-							end
-						else
-							begin
-							overflow = 1'b0;
-							end
-						end
-					end
+				y=25'sb0_0000_0000_0000_0000_0000_0000;
+				overflow=1'b1;
+				end
+			if(a[largo]==0 && b[largo]==1  && y[largo]==0)
+				begin
+				y=25'sb0_0000_0000_0000_0000_0000_0000;
+				overflow=1'b1;
+				end
+			if(a[largo]==0 && b[largo]==0  && y[largo]==1)
+				begin
+				y=25'sb0_0000_0000_0000_0000_0000_0000;
+				overflow=1'b1;
 				end
 		end
-		default: y = 25'sb1111_1111_1111_1111_1111_1111_1;
+		default:
+		y=25'sb1111_1111_1111_1111_1111_1111_1;
 		endcase
 end
-
-assign overflow_o = overflow; 
-assign y_sal = y;
-
 endmodule

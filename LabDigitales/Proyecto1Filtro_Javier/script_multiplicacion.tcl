@@ -2,26 +2,23 @@
 
 project compileall;
 
-vsim -gui work.Prueba_UA;
+vsim -gui work.test_multiplicador;
 
 
 add wave -position insertpoint -color "blue"\
-sim:/Prueba_UA/a;
+sim:/test_multiplicador/a;
 
 add wave -position insertpoint -color "green"\
-sim:/Prueba_UA/b;
+sim:/test_multiplicador/b;
+
+add wave -position insertpoint -color "blue"\
+sim:/test_multiplicador/y1;
 
 add wave -position insertpoint -color "white"\
-sim:/Prueba_UA/y;
-
-add wave -position insertpoint -color "red"\
-sim:/Prueba_UA/func;
+sim:/test_multiplicador/y;
 
 add wave -position insertpoint -color "white"\
-sim:/Prueba_UA/overflow;
-
-add wave -position insertpoint -color "white"\
-sim:/Prueba_UA/y1;
+sim:/test_multiplicador/overflow;
 
 config wave -signalnamewidth 1;
 
