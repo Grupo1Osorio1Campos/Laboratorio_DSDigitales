@@ -1,0 +1,57 @@
+C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/multiplicador.v {1 {vlog -work work -stats=none C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/multiplicador.v
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module multiplicador
+
+Top level modules:
+	multiplicador
+
+} {} {}} C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/TB_Filtro.v {1 {vlog -work work -stats=none C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/TB_Filtro.v
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module TB_Filtro
+
+Top level modules:
+	TB_Filtro
+
+} {} {}} C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/filter_opt_top.v {1 {vlog -work work -stats=none C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/filter_opt_top.v
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module filter_opt_top
+
+Top level modules:
+	filter_opt_top
+
+} {} {}} C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/adc_top.v {1 {vlog -work work -stats=none C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/adc_top.v
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module adc_top
+
+Top level modules:
+	adc_top
+
+} {} {}} C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/TB_filtro1.v {1 {vlog -work work -stats=none C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/TB_filtro1.v
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module TB_filtro1
+
+Top level modules:
+	TB_filtro1
+
+} {} {}} C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/resgister_fil.v {1 {vlog -work work -stats=none C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/resgister_fil.v
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module resgister_fil
+
+Top level modules:
+	resgister_fil
+
+} {} {}} C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/filter_1.v {1 {vlog -work work -stats=none C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/filter_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module filter_1
+
+Top level modules:
+	filter_1
+
+} {} {}} C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/sumador.v {1 {vlog -work work -stats=none C:/Users/Javier/Desktop/LabDigitales/Proyecto1FiltroVersionPrueba/sumador.v
+Model Technology ModelSim PE Student Edition vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module sumador
+
+Top level modules:
+	sumador
+
+} {} {}}

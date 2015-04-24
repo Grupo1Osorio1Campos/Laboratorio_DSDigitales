@@ -1,0 +1,650 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+F:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml filter_opt_top.twx filter_opt_top.ncd -o filter_opt_top.twr
+filter_opt_top.pcf
+
+Design file:              filter_opt_top.ncd
+Physical constraint file: filter_opt_top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+data_i<0>   |    4.815(R)|      SLOW  |   -1.576(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<1>   |    4.560(R)|      SLOW  |   -1.328(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<2>   |    4.716(R)|      SLOW  |   -1.266(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<3>   |    4.576(R)|      SLOW  |   -1.135(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<4>   |    4.761(R)|      SLOW  |   -1.344(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<5>   |    4.694(R)|      SLOW  |   -1.287(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<6>   |    4.131(R)|      SLOW  |   -1.126(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<7>   |    4.710(R)|      SLOW  |   -1.168(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<8>   |    3.992(R)|      SLOW  |   -1.049(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<9>   |    4.114(R)|      SLOW  |   -0.983(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<10>  |    4.170(R)|      SLOW  |   -0.946(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<11>  |    4.249(R)|      SLOW  |   -1.222(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<12>  |    4.247(R)|      SLOW  |   -1.263(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<13>  |    4.309(R)|      SLOW  |   -1.191(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<14>  |    3.823(R)|      SLOW  |   -1.046(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<15>  |    3.490(R)|      SLOW  |   -1.057(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<16>  |    4.112(R)|      SLOW  |   -1.224(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<17>  |    3.893(R)|      SLOW  |   -1.143(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<18>  |    4.019(R)|      SLOW  |   -1.179(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<19>  |    3.997(R)|      SLOW  |   -1.124(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<20>  |    3.762(R)|      SLOW  |   -0.951(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<21>  |    3.749(R)|      SLOW  |   -0.936(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_i<22>  |    3.706(R)|      SLOW  |   -0.693(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+rst         |    3.271(R)|      SLOW  |   -0.726(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data_out<0> |        59.265(R)|      SLOW  |         5.686(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<1> |        59.129(R)|      SLOW  |         5.873(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<2> |        58.650(R)|      SLOW  |         5.419(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<3> |        58.680(R)|      SLOW  |         5.405(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<4> |        58.486(R)|      SLOW  |         5.344(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<5> |        58.635(R)|      SLOW  |         5.476(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<6> |        58.797(R)|      SLOW  |         5.627(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<7> |        58.407(R)|      SLOW  |         5.302(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<8> |        58.347(R)|      SLOW  |         5.261(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<9> |        58.260(R)|      SLOW  |         5.248(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<10>|        58.749(R)|      SLOW  |         5.339(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<11>|        58.289(R)|      SLOW  |         5.248(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<12>|        58.363(R)|      SLOW  |         5.306(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<13>|        58.491(R)|      SLOW  |         5.208(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<14>|        58.409(R)|      SLOW  |         5.175(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<15>|        58.328(R)|      SLOW  |         5.260(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<16>|        58.611(R)|      SLOW  |         5.470(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<17>|        58.371(R)|      SLOW  |         5.228(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<18>|        58.449(R)|      SLOW  |         5.279(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<19>|        58.991(R)|      SLOW  |         5.660(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<20>|        58.288(R)|      SLOW  |         5.105(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<21>|        58.530(R)|      SLOW  |         5.260(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+data_out<22>|        57.986(R)|      SLOW  |         5.166(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   25.748|    5.122|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+data_i<0>      |data_out<0>    |   37.834|
+data_i<0>      |data_out<1>    |   37.698|
+data_i<0>      |data_out<2>    |   37.219|
+data_i<0>      |data_out<3>    |   37.249|
+data_i<0>      |data_out<4>    |   37.055|
+data_i<0>      |data_out<5>    |   37.204|
+data_i<0>      |data_out<6>    |   37.366|
+data_i<0>      |data_out<7>    |   36.976|
+data_i<0>      |data_out<8>    |   36.916|
+data_i<0>      |data_out<9>    |   36.829|
+data_i<0>      |data_out<10>   |   37.318|
+data_i<0>      |data_out<11>   |   36.858|
+data_i<0>      |data_out<12>   |   36.932|
+data_i<0>      |data_out<13>   |   37.060|
+data_i<0>      |data_out<14>   |   36.978|
+data_i<0>      |data_out<15>   |   36.897|
+data_i<0>      |data_out<16>   |   37.180|
+data_i<0>      |data_out<17>   |   36.940|
+data_i<0>      |data_out<18>   |   37.018|
+data_i<0>      |data_out<19>   |   37.560|
+data_i<0>      |data_out<20>   |   36.857|
+data_i<0>      |data_out<21>   |   37.099|
+data_i<0>      |data_out<22>   |   36.555|
+data_i<1>      |data_out<0>    |   37.579|
+data_i<1>      |data_out<1>    |   37.443|
+data_i<1>      |data_out<2>    |   36.964|
+data_i<1>      |data_out<3>    |   36.994|
+data_i<1>      |data_out<4>    |   36.800|
+data_i<1>      |data_out<5>    |   36.949|
+data_i<1>      |data_out<6>    |   37.111|
+data_i<1>      |data_out<7>    |   36.721|
+data_i<1>      |data_out<8>    |   36.661|
+data_i<1>      |data_out<9>    |   36.574|
+data_i<1>      |data_out<10>   |   37.063|
+data_i<1>      |data_out<11>   |   36.603|
+data_i<1>      |data_out<12>   |   36.677|
+data_i<1>      |data_out<13>   |   36.805|
+data_i<1>      |data_out<14>   |   36.723|
+data_i<1>      |data_out<15>   |   36.642|
+data_i<1>      |data_out<16>   |   36.925|
+data_i<1>      |data_out<17>   |   36.685|
+data_i<1>      |data_out<18>   |   36.763|
+data_i<1>      |data_out<19>   |   37.305|
+data_i<1>      |data_out<20>   |   36.602|
+data_i<1>      |data_out<21>   |   36.844|
+data_i<1>      |data_out<22>   |   36.300|
+data_i<2>      |data_out<0>    |   37.735|
+data_i<2>      |data_out<1>    |   37.599|
+data_i<2>      |data_out<2>    |   37.120|
+data_i<2>      |data_out<3>    |   37.150|
+data_i<2>      |data_out<4>    |   36.956|
+data_i<2>      |data_out<5>    |   37.105|
+data_i<2>      |data_out<6>    |   37.267|
+data_i<2>      |data_out<7>    |   36.877|
+data_i<2>      |data_out<8>    |   36.817|
+data_i<2>      |data_out<9>    |   36.730|
+data_i<2>      |data_out<10>   |   37.219|
+data_i<2>      |data_out<11>   |   36.759|
+data_i<2>      |data_out<12>   |   36.833|
+data_i<2>      |data_out<13>   |   36.961|
+data_i<2>      |data_out<14>   |   36.879|
+data_i<2>      |data_out<15>   |   36.798|
+data_i<2>      |data_out<16>   |   37.081|
+data_i<2>      |data_out<17>   |   36.841|
+data_i<2>      |data_out<18>   |   36.919|
+data_i<2>      |data_out<19>   |   37.461|
+data_i<2>      |data_out<20>   |   36.758|
+data_i<2>      |data_out<21>   |   37.000|
+data_i<2>      |data_out<22>   |   36.456|
+data_i<3>      |data_out<0>    |   37.595|
+data_i<3>      |data_out<1>    |   37.459|
+data_i<3>      |data_out<2>    |   36.980|
+data_i<3>      |data_out<3>    |   37.010|
+data_i<3>      |data_out<4>    |   36.816|
+data_i<3>      |data_out<5>    |   36.965|
+data_i<3>      |data_out<6>    |   37.127|
+data_i<3>      |data_out<7>    |   36.737|
+data_i<3>      |data_out<8>    |   36.677|
+data_i<3>      |data_out<9>    |   36.590|
+data_i<3>      |data_out<10>   |   37.079|
+data_i<3>      |data_out<11>   |   36.619|
+data_i<3>      |data_out<12>   |   36.693|
+data_i<3>      |data_out<13>   |   36.821|
+data_i<3>      |data_out<14>   |   36.739|
+data_i<3>      |data_out<15>   |   36.658|
+data_i<3>      |data_out<16>   |   36.941|
+data_i<3>      |data_out<17>   |   36.701|
+data_i<3>      |data_out<18>   |   36.779|
+data_i<3>      |data_out<19>   |   37.321|
+data_i<3>      |data_out<20>   |   36.618|
+data_i<3>      |data_out<21>   |   36.860|
+data_i<3>      |data_out<22>   |   36.316|
+data_i<4>      |data_out<0>    |   37.780|
+data_i<4>      |data_out<1>    |   37.644|
+data_i<4>      |data_out<2>    |   37.165|
+data_i<4>      |data_out<3>    |   37.195|
+data_i<4>      |data_out<4>    |   37.001|
+data_i<4>      |data_out<5>    |   37.150|
+data_i<4>      |data_out<6>    |   37.312|
+data_i<4>      |data_out<7>    |   36.922|
+data_i<4>      |data_out<8>    |   36.862|
+data_i<4>      |data_out<9>    |   36.775|
+data_i<4>      |data_out<10>   |   37.264|
+data_i<4>      |data_out<11>   |   36.804|
+data_i<4>      |data_out<12>   |   36.878|
+data_i<4>      |data_out<13>   |   37.006|
+data_i<4>      |data_out<14>   |   36.924|
+data_i<4>      |data_out<15>   |   36.843|
+data_i<4>      |data_out<16>   |   37.126|
+data_i<4>      |data_out<17>   |   36.886|
+data_i<4>      |data_out<18>   |   36.964|
+data_i<4>      |data_out<19>   |   37.506|
+data_i<4>      |data_out<20>   |   36.803|
+data_i<4>      |data_out<21>   |   37.045|
+data_i<4>      |data_out<22>   |   36.501|
+data_i<5>      |data_out<0>    |   37.713|
+data_i<5>      |data_out<1>    |   37.577|
+data_i<5>      |data_out<2>    |   37.098|
+data_i<5>      |data_out<3>    |   37.128|
+data_i<5>      |data_out<4>    |   36.934|
+data_i<5>      |data_out<5>    |   37.083|
+data_i<5>      |data_out<6>    |   37.245|
+data_i<5>      |data_out<7>    |   36.855|
+data_i<5>      |data_out<8>    |   36.795|
+data_i<5>      |data_out<9>    |   36.708|
+data_i<5>      |data_out<10>   |   37.197|
+data_i<5>      |data_out<11>   |   36.737|
+data_i<5>      |data_out<12>   |   36.811|
+data_i<5>      |data_out<13>   |   36.939|
+data_i<5>      |data_out<14>   |   36.857|
+data_i<5>      |data_out<15>   |   36.776|
+data_i<5>      |data_out<16>   |   37.059|
+data_i<5>      |data_out<17>   |   36.819|
+data_i<5>      |data_out<18>   |   36.897|
+data_i<5>      |data_out<19>   |   37.439|
+data_i<5>      |data_out<20>   |   36.736|
+data_i<5>      |data_out<21>   |   36.978|
+data_i<5>      |data_out<22>   |   36.434|
+data_i<6>      |data_out<0>    |   37.150|
+data_i<6>      |data_out<1>    |   37.014|
+data_i<6>      |data_out<2>    |   36.535|
+data_i<6>      |data_out<3>    |   36.565|
+data_i<6>      |data_out<4>    |   36.371|
+data_i<6>      |data_out<5>    |   36.520|
+data_i<6>      |data_out<6>    |   36.682|
+data_i<6>      |data_out<7>    |   36.292|
+data_i<6>      |data_out<8>    |   36.232|
+data_i<6>      |data_out<9>    |   36.145|
+data_i<6>      |data_out<10>   |   36.634|
+data_i<6>      |data_out<11>   |   36.174|
+data_i<6>      |data_out<12>   |   36.248|
+data_i<6>      |data_out<13>   |   36.376|
+data_i<6>      |data_out<14>   |   36.294|
+data_i<6>      |data_out<15>   |   36.213|
+data_i<6>      |data_out<16>   |   36.496|
+data_i<6>      |data_out<17>   |   36.256|
+data_i<6>      |data_out<18>   |   36.334|
+data_i<6>      |data_out<19>   |   36.876|
+data_i<6>      |data_out<20>   |   36.173|
+data_i<6>      |data_out<21>   |   36.415|
+data_i<6>      |data_out<22>   |   35.871|
+data_i<7>      |data_out<0>    |   37.729|
+data_i<7>      |data_out<1>    |   37.593|
+data_i<7>      |data_out<2>    |   37.114|
+data_i<7>      |data_out<3>    |   37.144|
+data_i<7>      |data_out<4>    |   36.950|
+data_i<7>      |data_out<5>    |   37.099|
+data_i<7>      |data_out<6>    |   37.261|
+data_i<7>      |data_out<7>    |   36.871|
+data_i<7>      |data_out<8>    |   36.811|
+data_i<7>      |data_out<9>    |   36.724|
+data_i<7>      |data_out<10>   |   37.213|
+data_i<7>      |data_out<11>   |   36.753|
+data_i<7>      |data_out<12>   |   36.827|
+data_i<7>      |data_out<13>   |   36.955|
+data_i<7>      |data_out<14>   |   36.873|
+data_i<7>      |data_out<15>   |   36.792|
+data_i<7>      |data_out<16>   |   37.075|
+data_i<7>      |data_out<17>   |   36.835|
+data_i<7>      |data_out<18>   |   36.913|
+data_i<7>      |data_out<19>   |   37.455|
+data_i<7>      |data_out<20>   |   36.752|
+data_i<7>      |data_out<21>   |   36.994|
+data_i<7>      |data_out<22>   |   36.450|
+data_i<8>      |data_out<0>    |   37.011|
+data_i<8>      |data_out<1>    |   36.875|
+data_i<8>      |data_out<2>    |   36.396|
+data_i<8>      |data_out<3>    |   36.426|
+data_i<8>      |data_out<4>    |   36.232|
+data_i<8>      |data_out<5>    |   36.381|
+data_i<8>      |data_out<6>    |   36.543|
+data_i<8>      |data_out<7>    |   36.153|
+data_i<8>      |data_out<8>    |   36.093|
+data_i<8>      |data_out<9>    |   36.006|
+data_i<8>      |data_out<10>   |   36.495|
+data_i<8>      |data_out<11>   |   36.035|
+data_i<8>      |data_out<12>   |   36.109|
+data_i<8>      |data_out<13>   |   36.237|
+data_i<8>      |data_out<14>   |   36.155|
+data_i<8>      |data_out<15>   |   36.074|
+data_i<8>      |data_out<16>   |   36.357|
+data_i<8>      |data_out<17>   |   36.117|
+data_i<8>      |data_out<18>   |   36.195|
+data_i<8>      |data_out<19>   |   36.737|
+data_i<8>      |data_out<20>   |   36.034|
+data_i<8>      |data_out<21>   |   36.276|
+data_i<8>      |data_out<22>   |   35.732|
+data_i<9>      |data_out<0>    |   37.133|
+data_i<9>      |data_out<1>    |   36.997|
+data_i<9>      |data_out<2>    |   36.518|
+data_i<9>      |data_out<3>    |   36.548|
+data_i<9>      |data_out<4>    |   36.354|
+data_i<9>      |data_out<5>    |   36.503|
+data_i<9>      |data_out<6>    |   36.665|
+data_i<9>      |data_out<7>    |   36.275|
+data_i<9>      |data_out<8>    |   36.215|
+data_i<9>      |data_out<9>    |   36.128|
+data_i<9>      |data_out<10>   |   36.617|
+data_i<9>      |data_out<11>   |   36.157|
+data_i<9>      |data_out<12>   |   36.231|
+data_i<9>      |data_out<13>   |   36.359|
+data_i<9>      |data_out<14>   |   36.277|
+data_i<9>      |data_out<15>   |   36.196|
+data_i<9>      |data_out<16>   |   36.479|
+data_i<9>      |data_out<17>   |   36.239|
+data_i<9>      |data_out<18>   |   36.317|
+data_i<9>      |data_out<19>   |   36.859|
+data_i<9>      |data_out<20>   |   36.156|
+data_i<9>      |data_out<21>   |   36.398|
+data_i<9>      |data_out<22>   |   35.854|
+data_i<10>     |data_out<0>    |   37.189|
+data_i<10>     |data_out<1>    |   37.053|
+data_i<10>     |data_out<2>    |   36.574|
+data_i<10>     |data_out<3>    |   36.604|
+data_i<10>     |data_out<4>    |   36.410|
+data_i<10>     |data_out<5>    |   36.559|
+data_i<10>     |data_out<6>    |   36.721|
+data_i<10>     |data_out<7>    |   36.331|
+data_i<10>     |data_out<8>    |   36.271|
+data_i<10>     |data_out<9>    |   36.184|
+data_i<10>     |data_out<10>   |   36.673|
+data_i<10>     |data_out<11>   |   36.213|
+data_i<10>     |data_out<12>   |   36.287|
+data_i<10>     |data_out<13>   |   36.415|
+data_i<10>     |data_out<14>   |   36.333|
+data_i<10>     |data_out<15>   |   36.252|
+data_i<10>     |data_out<16>   |   36.535|
+data_i<10>     |data_out<17>   |   36.295|
+data_i<10>     |data_out<18>   |   36.373|
+data_i<10>     |data_out<19>   |   36.915|
+data_i<10>     |data_out<20>   |   36.212|
+data_i<10>     |data_out<21>   |   36.454|
+data_i<10>     |data_out<22>   |   35.910|
+data_i<11>     |data_out<0>    |   37.268|
+data_i<11>     |data_out<1>    |   37.132|
+data_i<11>     |data_out<2>    |   36.653|
+data_i<11>     |data_out<3>    |   36.683|
+data_i<11>     |data_out<4>    |   36.489|
+data_i<11>     |data_out<5>    |   36.638|
+data_i<11>     |data_out<6>    |   36.800|
+data_i<11>     |data_out<7>    |   36.410|
+data_i<11>     |data_out<8>    |   36.350|
+data_i<11>     |data_out<9>    |   36.263|
+data_i<11>     |data_out<10>   |   36.752|
+data_i<11>     |data_out<11>   |   36.292|
+data_i<11>     |data_out<12>   |   36.366|
+data_i<11>     |data_out<13>   |   36.494|
+data_i<11>     |data_out<14>   |   36.412|
+data_i<11>     |data_out<15>   |   36.331|
+data_i<11>     |data_out<16>   |   36.614|
+data_i<11>     |data_out<17>   |   36.374|
+data_i<11>     |data_out<18>   |   36.452|
+data_i<11>     |data_out<19>   |   36.994|
+data_i<11>     |data_out<20>   |   36.291|
+data_i<11>     |data_out<21>   |   36.533|
+data_i<11>     |data_out<22>   |   35.989|
+data_i<12>     |data_out<0>    |   37.266|
+data_i<12>     |data_out<1>    |   37.130|
+data_i<12>     |data_out<2>    |   36.651|
+data_i<12>     |data_out<3>    |   36.681|
+data_i<12>     |data_out<4>    |   36.487|
+data_i<12>     |data_out<5>    |   36.636|
+data_i<12>     |data_out<6>    |   36.798|
+data_i<12>     |data_out<7>    |   36.408|
+data_i<12>     |data_out<8>    |   36.348|
+data_i<12>     |data_out<9>    |   36.261|
+data_i<12>     |data_out<10>   |   36.750|
+data_i<12>     |data_out<11>   |   36.290|
+data_i<12>     |data_out<12>   |   36.364|
+data_i<12>     |data_out<13>   |   36.492|
+data_i<12>     |data_out<14>   |   36.410|
+data_i<12>     |data_out<15>   |   36.329|
+data_i<12>     |data_out<16>   |   36.612|
+data_i<12>     |data_out<17>   |   36.372|
+data_i<12>     |data_out<18>   |   36.450|
+data_i<12>     |data_out<19>   |   36.992|
+data_i<12>     |data_out<20>   |   36.289|
+data_i<12>     |data_out<21>   |   36.531|
+data_i<12>     |data_out<22>   |   35.987|
+data_i<13>     |data_out<0>    |   37.328|
+data_i<13>     |data_out<1>    |   37.192|
+data_i<13>     |data_out<2>    |   36.713|
+data_i<13>     |data_out<3>    |   36.743|
+data_i<13>     |data_out<4>    |   36.549|
+data_i<13>     |data_out<5>    |   36.698|
+data_i<13>     |data_out<6>    |   36.860|
+data_i<13>     |data_out<7>    |   36.470|
+data_i<13>     |data_out<8>    |   36.410|
+data_i<13>     |data_out<9>    |   36.323|
+data_i<13>     |data_out<10>   |   36.812|
+data_i<13>     |data_out<11>   |   36.352|
+data_i<13>     |data_out<12>   |   36.426|
+data_i<13>     |data_out<13>   |   36.554|
+data_i<13>     |data_out<14>   |   36.472|
+data_i<13>     |data_out<15>   |   36.391|
+data_i<13>     |data_out<16>   |   36.674|
+data_i<13>     |data_out<17>   |   36.434|
+data_i<13>     |data_out<18>   |   36.512|
+data_i<13>     |data_out<19>   |   37.054|
+data_i<13>     |data_out<20>   |   36.351|
+data_i<13>     |data_out<21>   |   36.593|
+data_i<13>     |data_out<22>   |   36.049|
+data_i<14>     |data_out<0>    |   36.842|
+data_i<14>     |data_out<1>    |   36.706|
+data_i<14>     |data_out<2>    |   36.227|
+data_i<14>     |data_out<3>    |   36.257|
+data_i<14>     |data_out<4>    |   36.063|
+data_i<14>     |data_out<5>    |   36.212|
+data_i<14>     |data_out<6>    |   36.374|
+data_i<14>     |data_out<7>    |   35.984|
+data_i<14>     |data_out<8>    |   35.924|
+data_i<14>     |data_out<9>    |   35.837|
+data_i<14>     |data_out<10>   |   36.326|
+data_i<14>     |data_out<11>   |   35.866|
+data_i<14>     |data_out<12>   |   35.940|
+data_i<14>     |data_out<13>   |   36.068|
+data_i<14>     |data_out<14>   |   35.986|
+data_i<14>     |data_out<15>   |   35.905|
+data_i<14>     |data_out<16>   |   36.188|
+data_i<14>     |data_out<17>   |   35.948|
+data_i<14>     |data_out<18>   |   36.026|
+data_i<14>     |data_out<19>   |   36.568|
+data_i<14>     |data_out<20>   |   35.865|
+data_i<14>     |data_out<21>   |   36.107|
+data_i<14>     |data_out<22>   |   35.563|
+data_i<15>     |data_out<0>    |   36.509|
+data_i<15>     |data_out<1>    |   36.373|
+data_i<15>     |data_out<2>    |   35.894|
+data_i<15>     |data_out<3>    |   35.924|
+data_i<15>     |data_out<4>    |   35.730|
+data_i<15>     |data_out<5>    |   35.879|
+data_i<15>     |data_out<6>    |   36.041|
+data_i<15>     |data_out<7>    |   35.651|
+data_i<15>     |data_out<8>    |   35.591|
+data_i<15>     |data_out<9>    |   35.504|
+data_i<15>     |data_out<10>   |   35.993|
+data_i<15>     |data_out<11>   |   35.533|
+data_i<15>     |data_out<12>   |   35.607|
+data_i<15>     |data_out<13>   |   35.735|
+data_i<15>     |data_out<14>   |   35.653|
+data_i<15>     |data_out<15>   |   35.572|
+data_i<15>     |data_out<16>   |   35.855|
+data_i<15>     |data_out<17>   |   35.615|
+data_i<15>     |data_out<18>   |   35.693|
+data_i<15>     |data_out<19>   |   36.235|
+data_i<15>     |data_out<20>   |   35.532|
+data_i<15>     |data_out<21>   |   35.774|
+data_i<15>     |data_out<22>   |   35.230|
+data_i<16>     |data_out<0>    |   37.131|
+data_i<16>     |data_out<1>    |   36.995|
+data_i<16>     |data_out<2>    |   36.516|
+data_i<16>     |data_out<3>    |   36.546|
+data_i<16>     |data_out<4>    |   36.352|
+data_i<16>     |data_out<5>    |   36.501|
+data_i<16>     |data_out<6>    |   36.663|
+data_i<16>     |data_out<7>    |   36.273|
+data_i<16>     |data_out<8>    |   36.213|
+data_i<16>     |data_out<9>    |   36.126|
+data_i<16>     |data_out<10>   |   36.615|
+data_i<16>     |data_out<11>   |   36.155|
+data_i<16>     |data_out<12>   |   36.229|
+data_i<16>     |data_out<13>   |   36.357|
+data_i<16>     |data_out<14>   |   36.275|
+data_i<16>     |data_out<15>   |   36.194|
+data_i<16>     |data_out<16>   |   36.477|
+data_i<16>     |data_out<17>   |   36.237|
+data_i<16>     |data_out<18>   |   36.315|
+data_i<16>     |data_out<19>   |   36.857|
+data_i<16>     |data_out<20>   |   36.154|
+data_i<16>     |data_out<21>   |   36.396|
+data_i<16>     |data_out<22>   |   35.852|
+data_i<17>     |data_out<0>    |   36.912|
+data_i<17>     |data_out<1>    |   36.776|
+data_i<17>     |data_out<2>    |   36.297|
+data_i<17>     |data_out<3>    |   36.327|
+data_i<17>     |data_out<4>    |   36.133|
+data_i<17>     |data_out<5>    |   36.282|
+data_i<17>     |data_out<6>    |   36.444|
+data_i<17>     |data_out<7>    |   36.054|
+data_i<17>     |data_out<8>    |   35.994|
+data_i<17>     |data_out<9>    |   35.907|
+data_i<17>     |data_out<10>   |   36.396|
+data_i<17>     |data_out<11>   |   35.936|
+data_i<17>     |data_out<12>   |   36.010|
+data_i<17>     |data_out<13>   |   36.138|
+data_i<17>     |data_out<14>   |   36.056|
+data_i<17>     |data_out<15>   |   35.975|
+data_i<17>     |data_out<16>   |   36.258|
+data_i<17>     |data_out<17>   |   36.018|
+data_i<17>     |data_out<18>   |   36.096|
+data_i<17>     |data_out<19>   |   36.638|
+data_i<17>     |data_out<20>   |   35.935|
+data_i<17>     |data_out<21>   |   36.177|
+data_i<17>     |data_out<22>   |   35.633|
+data_i<18>     |data_out<0>    |   37.038|
+data_i<18>     |data_out<1>    |   36.902|
+data_i<18>     |data_out<2>    |   36.423|
+data_i<18>     |data_out<3>    |   36.453|
+data_i<18>     |data_out<4>    |   36.259|
+data_i<18>     |data_out<5>    |   36.408|
+data_i<18>     |data_out<6>    |   36.570|
+data_i<18>     |data_out<7>    |   36.180|
+data_i<18>     |data_out<8>    |   36.120|
+data_i<18>     |data_out<9>    |   36.033|
+data_i<18>     |data_out<10>   |   36.522|
+data_i<18>     |data_out<11>   |   36.062|
+data_i<18>     |data_out<12>   |   36.136|
+data_i<18>     |data_out<13>   |   36.264|
+data_i<18>     |data_out<14>   |   36.182|
+data_i<18>     |data_out<15>   |   36.101|
+data_i<18>     |data_out<16>   |   36.384|
+data_i<18>     |data_out<17>   |   36.144|
+data_i<18>     |data_out<18>   |   36.222|
+data_i<18>     |data_out<19>   |   36.764|
+data_i<18>     |data_out<20>   |   36.061|
+data_i<18>     |data_out<21>   |   36.303|
+data_i<18>     |data_out<22>   |   35.759|
+data_i<19>     |data_out<0>    |   37.016|
+data_i<19>     |data_out<1>    |   36.880|
+data_i<19>     |data_out<2>    |   36.401|
+data_i<19>     |data_out<3>    |   36.431|
+data_i<19>     |data_out<4>    |   36.237|
+data_i<19>     |data_out<5>    |   36.386|
+data_i<19>     |data_out<6>    |   36.548|
+data_i<19>     |data_out<7>    |   36.158|
+data_i<19>     |data_out<8>    |   36.098|
+data_i<19>     |data_out<9>    |   36.011|
+data_i<19>     |data_out<10>   |   36.500|
+data_i<19>     |data_out<11>   |   36.040|
+data_i<19>     |data_out<12>   |   36.114|
+data_i<19>     |data_out<13>   |   36.242|
+data_i<19>     |data_out<14>   |   36.160|
+data_i<19>     |data_out<15>   |   36.079|
+data_i<19>     |data_out<16>   |   36.362|
+data_i<19>     |data_out<17>   |   36.122|
+data_i<19>     |data_out<18>   |   36.200|
+data_i<19>     |data_out<19>   |   36.742|
+data_i<19>     |data_out<20>   |   36.039|
+data_i<19>     |data_out<21>   |   36.281|
+data_i<19>     |data_out<22>   |   35.737|
+data_i<20>     |data_out<0>    |   36.750|
+data_i<20>     |data_out<1>    |   36.614|
+data_i<20>     |data_out<2>    |   36.135|
+data_i<20>     |data_out<3>    |   36.165|
+data_i<20>     |data_out<4>    |   35.971|
+data_i<20>     |data_out<5>    |   36.120|
+data_i<20>     |data_out<6>    |   36.282|
+data_i<20>     |data_out<7>    |   35.892|
+data_i<20>     |data_out<8>    |   35.832|
+data_i<20>     |data_out<9>    |   35.745|
+data_i<20>     |data_out<10>   |   36.234|
+data_i<20>     |data_out<11>   |   35.774|
+data_i<20>     |data_out<12>   |   35.848|
+data_i<20>     |data_out<13>   |   35.976|
+data_i<20>     |data_out<14>   |   35.894|
+data_i<20>     |data_out<15>   |   35.813|
+data_i<20>     |data_out<16>   |   36.096|
+data_i<20>     |data_out<17>   |   35.856|
+data_i<20>     |data_out<18>   |   35.934|
+data_i<20>     |data_out<19>   |   36.476|
+data_i<20>     |data_out<20>   |   35.773|
+data_i<20>     |data_out<21>   |   36.015|
+data_i<20>     |data_out<22>   |   35.471|
+data_i<21>     |data_out<0>    |   36.737|
+data_i<21>     |data_out<1>    |   36.601|
+data_i<21>     |data_out<2>    |   36.122|
+data_i<21>     |data_out<3>    |   36.152|
+data_i<21>     |data_out<4>    |   35.958|
+data_i<21>     |data_out<5>    |   36.107|
+data_i<21>     |data_out<6>    |   36.269|
+data_i<21>     |data_out<7>    |   35.879|
+data_i<21>     |data_out<8>    |   35.819|
+data_i<21>     |data_out<9>    |   35.732|
+data_i<21>     |data_out<10>   |   36.221|
+data_i<21>     |data_out<11>   |   35.761|
+data_i<21>     |data_out<12>   |   35.835|
+data_i<21>     |data_out<13>   |   35.963|
+data_i<21>     |data_out<14>   |   35.881|
+data_i<21>     |data_out<15>   |   35.800|
+data_i<21>     |data_out<16>   |   36.083|
+data_i<21>     |data_out<17>   |   35.843|
+data_i<21>     |data_out<18>   |   35.921|
+data_i<21>     |data_out<19>   |   36.463|
+data_i<21>     |data_out<20>   |   35.760|
+data_i<21>     |data_out<21>   |   36.002|
+data_i<21>     |data_out<22>   |   35.458|
+data_i<22>     |data_out<0>    |   36.701|
+data_i<22>     |data_out<1>    |   36.565|
+data_i<22>     |data_out<2>    |   36.086|
+data_i<22>     |data_out<3>    |   36.116|
+data_i<22>     |data_out<4>    |   35.922|
+data_i<22>     |data_out<5>    |   36.071|
+data_i<22>     |data_out<6>    |   36.233|
+data_i<22>     |data_out<7>    |   35.843|
+data_i<22>     |data_out<8>    |   35.783|
+data_i<22>     |data_out<9>    |   35.696|
+data_i<22>     |data_out<10>   |   36.185|
+data_i<22>     |data_out<11>   |   35.725|
+data_i<22>     |data_out<12>   |   35.799|
+data_i<22>     |data_out<13>   |   35.927|
+data_i<22>     |data_out<14>   |   35.845|
+data_i<22>     |data_out<15>   |   35.764|
+data_i<22>     |data_out<16>   |   36.047|
+data_i<22>     |data_out<17>   |   35.807|
+data_i<22>     |data_out<18>   |   35.885|
+data_i<22>     |data_out<19>   |   36.427|
+data_i<22>     |data_out<20>   |   35.724|
+data_i<22>     |data_out<21>   |   35.966|
+data_i<22>     |data_out<22>   |   35.422|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Apr 22 22:26:30 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 178 MB
+
+
+
