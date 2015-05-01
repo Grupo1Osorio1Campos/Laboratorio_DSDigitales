@@ -1,0 +1,8 @@
+verilog isim_temp "Suma.v"
+verilog isim_temp "Registro.v"
+verilog isim_temp "Multiplicador.v"
+verilog isim_temp "Filtro.v"
+verilog isim_temp "CLK.v"
+verilog isim_temp "FiltroTop.v"
+verilog isim_temp "Testbench_Filtro.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

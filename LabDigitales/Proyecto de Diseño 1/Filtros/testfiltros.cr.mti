@@ -1,0 +1,50 @@
+{C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Multiplicador.v} {1 {vlog -work work -stats=none {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Multiplicador.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module multiplicador
+
+Top level modules:
+	multiplicador
+
+} {} {}} {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/CLK.v} {1 {vlog -work work -stats=none {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/CLK.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module CLK
+
+Top level modules:
+	CLK
+
+} {} {}} {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Suma.v} {1 {vlog -work work -stats=none {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Suma.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Suma
+
+Top level modules:
+	Suma
+
+} {} {}} {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Testbench_Filtro.v} {1 {vlog -work work -stats=none {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Testbench_Filtro.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Testbench_Filtro
+
+Top level modules:
+	Testbench_Filtro
+
+} {} {}} {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/FiltroTop.v} {1 {vlog -work work -stats=none {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/FiltroTop.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FiltroTop
+
+Top level modules:
+	FiltroTop
+
+} {} {}} {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Registro.v} {1 {vlog -work work -stats=none {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Registro.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Registro
+
+Top level modules:
+	Registro
+
+} {} {}} {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Filtro.v} {1 {vlog -work work -stats=none {C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Filtros/Filtro.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Filtro
+
+Top level modules:
+	Filtro
+
+} {} {}}
