@@ -1,6 +1,0 @@
-vhdtdtfi -lang verilog -prj Proyecto1EcualizadordeAudio -o "//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/CLK.tfi" -lib work "//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto_Corto_2_Version_Final//CLK.v" -module CLK -template C:/Windows/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
-xst -intstyle ise -ifn "//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/CLK.xst" -ofn "//psf/Home/Documents/I semestre 2015/Lab. Sistemas Digitales/Laboratorio_DSDigitales/LabDigitales/Proyecto1EcualizadordeAudio/CLK.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "CLK.ngc" CLK.ngd  
-map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CLK_map.ncd CLK.ngd CLK.pcf 
-par -w -intstyle ise -ol high -mt off CLK_map.ncd CLK.ncd CLK.pcf 
-trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CLK.twx CLK.ncd -o CLK.twr CLK.pcf 

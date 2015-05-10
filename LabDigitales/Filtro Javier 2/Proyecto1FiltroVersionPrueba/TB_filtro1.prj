@@ -1,7 +1,0 @@
-verilog work "sumador.v"
-verilog work "resgister_fil.v"
-verilog work "multiplicador.v"
-verilog work "filter_1.v"
-verilog work "CLK.v"
-verilog work "filter_opt_top.v"
-verilog work "TB_filtro1.v"

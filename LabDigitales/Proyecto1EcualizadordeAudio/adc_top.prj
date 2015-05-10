@@ -1,3 +1,0 @@
-verilog work "../Proyecto_Corto_2_Version_Final/CLK.v"
-verilog work "adc_eq.v"
-verilog work "adc_top.v"
