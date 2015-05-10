@@ -1,0 +1,4 @@
+verilog work "Suma.v"
+verilog work "Registro.v"
+verilog work "Multiplicador.v"
+verilog work "Filtro.v"

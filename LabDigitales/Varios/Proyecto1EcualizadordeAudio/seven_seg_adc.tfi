@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+seven_seg_adc instance_name (
+    .clk_i(clk_i), 
+    .rst_i(rst_i), 
+    .estado(estado), 
+    .SSegm(SSegm), 
+    .anodo(anodo)
+    );
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">filter_20_200_a/R1/data_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">filter_opt_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">filter_200_5000_a/R1/data_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">filter_opt_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">filter_5000_20000_a/R1/data_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">filter_opt_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">filter_20_200_a/R2/data_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">filter_opt_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">filter_200_5000_a/R2/data_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">filter_opt_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">filter_5000_20000_a/R2/data_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">filter_opt_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">filter_20_200_a/Multi_a2/Mmult_y1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">filter_20_200_a/Multi_a2/Mmult_y11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">filter_200_5000_a/Multi_a2/Mmult_y1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">filter_200_5000_a/Multi_a2/Mmult_y11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">filter_5000_20000_a/Multi_a1/Mmult_y1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">filter_5000_20000_a/Multi_a1/Mmult_y11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">filter_5000_20000_a/Multi_a2/Mmult_y1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">filter_5000_20000_a/Multi_a2/Mmult_y11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">filter_20_200_a/R2/data_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;filter_20_200_a/R2/data_2&gt; &lt;filter_20_200_a/R2/data_3&gt; &lt;filter_20_200_a/R2/data_4&gt; &lt;filter_20_200_a/R2/data_5&gt; &lt;filter_20_200_a/R2/data_6&gt; &lt;filter_20_200_a/R2/data_7&gt; &lt;filter_20_200_a/R2/data_8&gt; &lt;filter_20_200_a/R2/data_9&gt; &lt;filter_20_200_a/R2/data_10&gt; &lt;filter_20_200_a/R2/data_11&gt; &lt;filter_20_200_a/R2/data_12&gt; &lt;filter_20_200_a/R2/data_13&gt; &lt;filter_20_200_a/R2/data_14&gt; &lt;filter_20_200_a/R2/data_15&gt; &lt;filter_20_200_a/R2/data_16&gt; &lt;filter_20_200_a/R2/data_17&gt; &lt;filter_20_200_a/R2/data_18&gt; &lt;filter_20_200_a/R2/data_19&gt; &lt;filter_20_200_a/R2/data_20&gt; &lt;filter_20_200_a/R2/data_21&gt; &lt;filter_5000_20000_a/R2/data_21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">filter_20_200_a/R1/data_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">filter_opt_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">20 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;filter_20_200_a/R1/data_3&gt; &lt;filter_20_200_a/R1/data_4&gt; &lt;filter_20_200_a/R1/data_5&gt; &lt;filter_20_200_a/R1/data_6&gt; &lt;filter_20_200_a/R1/data_7&gt; &lt;filter_20_200_a/R1/data_8&gt; &lt;filter_20_200_a/R1/data_9&gt; &lt;filter_20_200_a/R1/data_10&gt; &lt;filter_20_200_a/R1/data_11&gt; &lt;filter_20_200_a/R1/data_12&gt; &lt;filter_20_200_a/R1/data_13&gt; &lt;filter_20_200_a/R1/data_14&gt; &lt;filter_20_200_a/R1/data_15&gt; &lt;filter_20_200_a/R1/data_16&gt; &lt;filter_20_200_a/R1/data_17&gt; &lt;filter_20_200_a/R1/data_18&gt; &lt;filter_20_200_a/R1/data_19&gt; &lt;filter_20_200_a/R1/data_20&gt; &lt;filter_20_200_a/R1/data_21&gt; &lt;filter_5000_20000_a/R1/data_21&gt; </arg>
+</msg>
+
+</messages>
+

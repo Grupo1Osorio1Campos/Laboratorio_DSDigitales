@@ -1,0 +1,394 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Javier/Desktop/LabDigitales/Proyecto_Corto_2_Version_Final
+vadc_eq
+Z0 !s110 1429848768
+!i10b 1
+!s100 P:ja5kPQ=;BZ_:EMd?^fC1
+Izf>YbHbg60@YNbjGR<jgb2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro
+w1429432946
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/adc_eq.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/adc_eq.v
+Z3 L0 21
+Z4 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z5 !s108 1429848768.000000
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/adc_eq.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/adc_eq.v|
+!s101 -O0
+!i113 1
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vadc_top
+R0
+!i10b 1
+!s100 nXS]3jZc4;bjei@lJl>QK0
+IBFN6Q?Q7h7:nmCZJa8J<22
+R1
+R2
+w1429432947
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/adc_top.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/adc_top.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/adc_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/adc_top.v|
+!s101 -O0
+!i113 1
+R6
+vCLK
+R0
+!i10b 1
+!s100 8IP]:e[4nR0H:Q;M;9M311
+IeUc?PJ86eQ?g8]<4C;4jj2
+R1
+R2
+w1429659779
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK.v|
+!s101 -O0
+!i113 1
+R6
+n@c@l@k
+vCLK_1
+Z7 !s110 1429848769
+!i10b 1
+!s100 44bh7Ac90[ZP16^1n>b]o0
+IT;kbW<5?akaOaBCD`DB<i1
+R1
+R2
+w1429432937
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK_1.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK_1.v
+R3
+R4
+r1
+!s85 0
+31
+Z8 !s108 1429848769.000000
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK_1.v|
+!s101 -O0
+!i113 1
+R6
+n@c@l@k_1
+vCLK_2
+R7
+!i10b 1
+!s100 kFXIB5a;7JY?DbL:FkkNR3
+InW51G:P`:P^d<nbn_E4931
+R1
+R2
+w1429432938
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK_2.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK_2.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK_2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/CLK_2.v|
+!s101 -O0
+!i113 1
+R6
+n@c@l@k_2
+vfilter_1
+R7
+!i10b 1
+!s100 ][XBcOYjfE7QbYGUb?f4V2
+I0`VF1JLGoGH1RnUB[oY``2
+R1
+R2
+w1429763054
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_1.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_1.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_1.v|
+!s101 -O0
+!i113 1
+R6
+vfilter_2_oprt_2
+R7
+!i10b 1
+!s100 gi;fQKATaj:kBT0kD0KgS3
+I1Qn]^cgkfAPg_1ViAcePj1
+R1
+R2
+w1429432940
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_2_oprt_2.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_2_oprt_2.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_2_oprt_2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_2_oprt_2.v|
+!s101 -O0
+!i113 1
+R6
+vfilter_3_oprt
+R7
+!i10b 1
+!s100 T=RCnD;QShoc;eP=GBPIg0
+I49neIKbJomd]L6C73z]e92
+R1
+R2
+w1429432943
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_3_oprt.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_3_oprt.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_3_oprt.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_3_oprt.v|
+!s101 -O0
+!i113 1
+R6
+vfilter_opt_top
+Z9 !s110 1429848770
+!i10b 1
+!s100 hDX_7mlX00N[0U9]z0FI:2
+IhjMaC=JjnCd:APz;TH<=l2
+R1
+R2
+w1429822655
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_opt_top.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_opt_top.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_opt_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/filter_opt_top.v|
+!s101 -O0
+!i113 1
+R6
+vmultiplicador
+R9
+!i10b 1
+!s100 4ooZ>5V7Bb>9cekAiMDBb0
+IaQTPOjF;>gY?:Xde35lTl2
+R1
+R2
+w1429763024
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/multiplicador.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/multiplicador.v
+R3
+R4
+r1
+!s85 0
+31
+Z10 !s108 1429848770.000000
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/multiplicador.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/multiplicador.v|
+!s101 -O0
+!i113 1
+R6
+vPrueba_UA
+R9
+!i10b 1
+!s100 3DMQiYOjV8^<cnLbdNiVY3
+IA^^YT^WMUVFkHhU;LDfH71
+R1
+R2
+w1429039374
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/Prueba_UA.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/Prueba_UA.v
+Z11 L0 25
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/Prueba_UA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/Prueba_UA.v|
+!s101 -O0
+!i113 1
+R6
+n@prueba_@u@a
+vresgister_fil
+R9
+!i10b 1
+!s100 kzFo>Z`nB>ldDVc=mhmB13
+IbHm`ENX]Mzc?^ST9_H^9M0
+R1
+R2
+w1429432945
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/resgister_fil.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/resgister_fil.v
+R3
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/resgister_fil.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/resgister_fil.v|
+!s101 -O0
+!i113 1
+R6
+vsumador
+Z12 !s110 1429848771
+!i10b 1
+!s100 7]G01`mfUfolJjeF95gMY0
+I`nzY405A[d>1RR4`=hLQZ1
+R1
+R2
+w1429761555
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/sumador.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/sumador.v
+R3
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/sumador.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/sumador.v|
+!s101 -O0
+!i113 1
+R6
+vTB_Filtro
+R12
+!i10b 1
+!s100 3oY=N75209P<ROnaUDn;32
+IKj[L0m=^7N7IgWAz_SC[[1
+R1
+R2
+w1429481722
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/TB_Filtro.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/TB_Filtro.v
+R11
+R4
+r1
+!s85 0
+31
+Z13 !s108 1429848771.000000
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/TB_Filtro.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/TB_Filtro.v|
+!s101 -O0
+!i113 1
+R6
+n@t@b_@filtro
+vTB_filtro1
+R12
+!i10b 1
+!s100 1>UliWKEeY^Tk0KQY9k;b3
+IImBmbmHc4b?FE>6;H2AV@0
+R1
+R2
+w1429820948
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/TB_filtro1.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/TB_filtro1.v
+R3
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/TB_filtro1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/TB_filtro1.v|
+!s101 -O0
+!i113 1
+R6
+n@t@b_filtro1
+vtest_multiplicador
+R12
+!i10b 1
+!s100 i1K_B^?^A7ThoUDhlYQ7i2
+I62f6nVnlF@[hWJU1;@=:k2
+R1
+R2
+w1429157495
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/test_multiplicador.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/test_multiplicador.v
+R11
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/test_multiplicador.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/test_multiplicador.v|
+!s101 -O0
+!i113 1
+R6
+vtest_sumador
+R12
+!i10b 1
+!s100 ZBVk>hkRgdXRn@SM3gTJ33
+I1jKI>[NBQ4]I`:]VOSN7c2
+R1
+R2
+w1429194905
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/test_sumador.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/test_sumador.v
+R11
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/test_sumador.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/test_sumador.v|
+!s101 -O0
+!i113 1
+R6
+vunidad_aritmetica
+R0
+!i10b 1
+!s100 e@Z7cHX>]Bk86PK;_6jAL2
+IIbH13dC?PJESJ3OT5OE6;0
+R1
+R2
+w1428960558
+8C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/unidad_aritmetica.v
+FC:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/unidad_aritmetica.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/unidad_aritmetica.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/javier/Documents/Proyectos Xilinx/LabDigitales/Proyecto1Filtro/unidad_aritmetica.v|
+!s101 -O0
+!i113 1
+R6

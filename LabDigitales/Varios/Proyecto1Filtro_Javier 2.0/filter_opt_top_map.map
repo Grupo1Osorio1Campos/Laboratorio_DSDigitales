@@ -1,0 +1,1989 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'filter_opt_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt on -ol
+high -xe c -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir
+off -pr off -lc off -power off -o filter_opt_top_map.ncd filter_opt_top.ngd
+filter_opt_top.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sat Apr 25 12:17:54 2015
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 12 secs 
+Total CPU  time at the beginning of Placer: 12 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:2d21305) REAL time: 13 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:2d21305) REAL time: 14 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:2d21305) REAL time: 14 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+...
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:f987dccd) REAL time: 24 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:f987dccd) REAL time: 24 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:f987dccd) REAL time: 24 secs 
+
+Phase 7.3  Local Placement Optimization
+...
+Phase 7.3  Local Placement Optimization (Checksum:6ccafd01) REAL time: 27 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:6ccafd01) REAL time: 27 secs 
+
+Phase 9.8  Global Placement
+.............
+...............................................................................
+...................................................
+...........................................................................................
+..............................................................................
+ERROR:Place:543 - This design does not fit into the number of slices available
+   in this device due to the complexity of the design and/or constraints.
+
+   Unplaced instances by type:
+
+     LUTL    532 (6.5)
+
+   Please evaluate the following:
+
+   - If there are user-defined constraints or area groups:
+     Please look at the "User-defined constraints" section below to determine
+     what constraints might be impacting the fitting of this design.
+     Evaluate if they can be moved, removed or resized to allow for fitting.
+     Verify that they do not overlap or conflict with clock region restrictions.
+     See the clock region reports in the MAP log file (*map) for more details
+     on clock region usage.
+
+   - If there is difficulty in placing LUTs:
+     Try using the MAP LUT Combining Option (map lc area|auto|off).
+
+   - If there is difficulty in placing FFs:
+     Evaluate the number and configuration of the control sets in your design.
+
+   The following instances are the last set of instances that failed to place:
+
+   0. Placer RPM "carry chain" (size: 38)
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<11>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<11>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<11>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<10>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<11>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<9>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<11>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<8>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<15>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<15>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<15>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<14>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<15>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<13>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<15>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<12>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_864.D5LUT
+      LUTL filter_200_5000_a/R2/data<17>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_865.C5LUT
+      LUTL filter_200_5000_a/R2/data<16>_rt
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<19>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<17>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<19>
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_lut<16>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_860.D5LUT
+      LUTL filter_200_5000_a/R2/data<17>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_861.C5LUT
+      LUTL filter_200_5000_a/R2/data<16>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_862.B5LUT
+      LUTL filter_200_5000_a/R2/data<17>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_863.A5LUT
+      LUTL filter_200_5000_a/R2/data<16>_rt.1
+      LUTL filter_200_5000_a/Multi_b2/Mmult_y1_Madd2_cy<25>
+      LUTL PhysOnlyGnd.C6LUT
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_858.B5LUT
+      LUTL filter_200_5000_a/R2/data<17>_rt.2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_859.A5LUT
+      LUTL filter_200_5000_a/R2/data<16>_rt.2
+   1. Placer RPM "carry chain" (size: 38)
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<13>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_lut<13>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<13>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_lut<12>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<13>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_lut<11>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<13>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_lut<10>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<17>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_lut<17>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<17>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_lut<16>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<17>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_lut<15>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<17>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_lut<14>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_105.D5LUT
+      LUTL filter_5000_20000_b/R1/data<16>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_104.C5LUT
+      LUTL filter_5000_20000_b/R1/data<14>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_103.B5LUT
+      LUTL filter_5000_20000_b/R1/data<13>_rt
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<21>
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_lut<18>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_109.D5LUT
+      LUTL filter_5000_20000_b/R1/data<15>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_108.C5LUT
+      LUTL filter_5000_20000_b/R1/data<15>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_107.B5LUT
+      LUTL filter_5000_20000_b/R1/data<13>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_106.A5LUT
+      LUTL filter_5000_20000_b/R1/data<13>_rt.1
+      LUTL filter_5000_20000_b/Multi_b1/Mmult_y1_Madd2_cy<27>
+      LUTL PhysOnlyGnd.C6LUT.2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_111.B5LUT
+      LUTL filter_5000_20000_b/R1/data<17>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_110.A5LUT
+      LUTL filter_5000_20000_b/R1/data<17>_rt
+   2. Placer RPM "carry chain" (size: 44)
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<17>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<16>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<15>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1199.D5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y242
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<21>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<20>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<19>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1195.D5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y412
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1196.C5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y241
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1197.B5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y413
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1198.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y1412
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1191.D5LUT
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd_xor<11>1212
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1192.C5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y611
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1193.B5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y612
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1194.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y411
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1187.D5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y1111
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1188.C5LUT
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd_xor<11>1211
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1189.B5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y911
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1190.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y912
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<35>
+      LUTL PhysOnlyGnd.B6LUT.4
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1186.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y1411
+   3. Placer RPM "carry chain" (size: 36)
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<9>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<9>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<9>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<8>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<9>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<7>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<9>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<6>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<13>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<13>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<13>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<12>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<13>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<11>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<13>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<10>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_211.D5LUT
+      LUTL filter_20_200_b/R2/data<14>_rt
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<17>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<16>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<17>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<15>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<17>
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_lut<14>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_215.D5LUT
+      LUTL filter_20_200_b/R2/data<16>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_214.C5LUT
+      LUTL filter_20_200_b/R2/data<14>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_213.B5LUT
+      LUTL filter_20_200_b/R2/data<16>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_212.A5LUT
+      LUTL filter_20_200_b/R2/data<15>_rt
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd2_cy<22>
+      LUTL PhysOnlyGnd.B6LUT.5
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_216.A5LUT
+      LUTL filter_20_200_b/R2/data<16>_rt.1
+   4. Placer RPM "carry chain" (size: 44)
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<13>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<12>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<11>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<17>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<16>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<15>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_854.D5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_242_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_855.C5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_232_rt
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<22>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<20>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<22>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<19>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_850.D5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_282_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_851.C5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_272_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_852.B5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_262_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_853.A5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_252_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_846.D5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_322_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_847.C5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_312_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_848.B5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_302_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_849.A5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_292_rt
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<31>
+      LUTL PhysOnlyGnd.B6LUT.8
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_845.A5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd2_cy<30>_rt
+   5. Placer RPM "carry chain" (size: 44)
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_108.D5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<5>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_107.C5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<4>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_106.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<3>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_105.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<2>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_112.D5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<9>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_111.C5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<8>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_110.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<7>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_109.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<6>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_116.D5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<13>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_115.C5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<12>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_114.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<11>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_113.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<10>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_194.D5LUT
+      LUTL filter_20_200_b/data_r2<7>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_193.C5LUT
+      LUTL filter_20_200_b/data_r2<6>_inv1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_118.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<15>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_117.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<14>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_196.D5LUT
+      LUTL filter_20_200_b/data_r2<14>_inv1_INV_0
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_122.C6LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_120.B6LUT
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_195.A5LUT
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd_1011_INV_0
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_125.B6LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_124.A6LUT
+   6. Placer RPM "carry chain" (size: 44)
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<17>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<16>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<15>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1138.D5LUT
+      LUTL filter_5000_20000_a/R2/data<10>_rt
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<21>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<20>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<19>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1134.D5LUT
+      LUTL filter_5000_20000_a/R2/data<12>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1135.C5LUT
+      LUTL filter_5000_20000_a/R2/data<10>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1136.B5LUT
+      LUTL filter_5000_20000_a/R2/data<12>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1137.A5LUT
+      LUTL filter_20_200_a/R2/data<1>_rt.4
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1130.D5LUT
+      LUTL filter_5000_20000_a/R2/data<18>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1131.C5LUT
+      LUTL filter_5000_20000_a/R2/data<14>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1132.B5LUT
+      LUTL filter_5000_20000_a/R2/data<14>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1133.A5LUT
+      LUTL filter_5000_20000_a/R2/data<12>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1126.D5LUT
+      LUTL filter_5000_20000_a/R2/data<19>_rt.2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1127.C5LUT
+      LUTL filter_5000_20000_a/R2/data<18>_rt.2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1128.B5LUT
+      LUTL filter_5000_20000_a/R2/data<17>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1129.A5LUT
+      LUTL filter_5000_20000_a/R2/data<17>_rt.1
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<35>
+      LUTL PhysOnlyGnd.B6LUT.10
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1125.A5LUT
+      LUTL filter_20_200_a/R2/data<1>_rt.5
+   7. Placer RPM "carry chain" (size: 44)
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<11>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<10>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<9>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<15>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<14>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<13>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<19>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<18>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<17>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<23>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<22>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<21>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_4.D5LUT
+      LUTL filter_20_200_b/R1/data<20>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_3.C5LUT
+      LUTL filter_20_200_b/R1/data<20>_rt
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<28>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<26>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<28>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<25>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<29>
+      LUTL PhysOnlyGnd.B6LUT.11
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_5.A5LUT
+      LUTL filter_20_200_b/R1/data<21>_rt
+   8. Placer RPM "carry chain" (size: 38)
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_lut<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_lut<10>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_lut<9>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_lut<8>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_69.D5LUT
+      LUTL filter_200_5000_b/R1/data<15>_rt
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_lut<14>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_lut<13>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_lut<12>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_73.D5LUT
+      LUTL filter_200_5000_b/R1/data<14>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_72.C5LUT
+      LUTL filter_200_5000_b/R1/data<18>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_71.B5LUT
+      LUTL filter_200_5000_b/R1/data<12>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_70.A5LUT
+      LUTL filter_200_5000_b/R1/data<18>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_77.D5LUT
+      LUTL filter_200_5000_b/R1/data<18>_rt_pack_2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_76.C5LUT
+      LUTL filter_200_5000_b/R1/data<18>_rt_pack_1.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_75.B5LUT
+      LUTL filter_200_5000_b/R1/data<17>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_74.A5LUT
+      LUTL filter_200_5000_b/R1/data<18>_rt.1
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd2_cy<25>
+      LUTL PhysOnlyGnd.C6LUT.11
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_79.B5LUT
+      LUTL filter_200_5000_b/R1/data<18>_rt.2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_78.A5LUT
+      LUTL filter_200_5000_b/R1/data<16>_rt
+   9. Placer RPM "carry chain" (size: 38)
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<10>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<9>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<11>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<8>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<15>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<15>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<15>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<14>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<15>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<13>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<15>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<12>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<19>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<19>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<19>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<18>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<19>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<17>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<19>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<16>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_59.D5LUT
+      LUTL filter_200_5000_b/R1/data<18>_rt.3
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_58.C5LUT
+      LUTL filter_200_5000_b/R1/data<15>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_57.B5LUT
+      LUTL filter_200_5000_b/R1/data<15>_rt.1
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<23>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_lut<20>
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd3_cy<25>
+      LUTL PhysOnlyGnd.C6LUT.12
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_61.B5LUT
+      LUTL filter_200_5000_b/R1/data<18>_rt.4
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_60.A5LUT
+      LUTL filter_200_5000_b/R1/data<19>_rt
+   10. Placer RPM "carry chain" (size: 44)
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_37.D5LUT
+       LUTL filter_200_5000_b/data_r1<3>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_36.C5LUT
+       LUTL filter_200_5000_b/data_r1<2>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_35.B5LUT
+       LUTL filter_200_5000_b/data_r1<1>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_34.A5LUT
+       LUTL filter_200_5000_b/data_r1<0>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_41.D5LUT
+       LUTL filter_200_5000_b/data_r1<7>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_40.C5LUT
+       LUTL filter_200_5000_b/data_r1<6>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_39.B5LUT
+       LUTL filter_200_5000_b/data_r1<5>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_38.A5LUT
+       LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd_1411_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_45.D5LUT
+       LUTL filter_200_5000_b/data_r1<11>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_44.C5LUT
+       LUTL filter_200_5000_b/data_r1<10>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_43.B5LUT
+       LUTL filter_200_5000_b/data_r1<9>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_42.A5LUT
+       LUTL filter_200_5000_b/data_r1<8>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_49.D5LUT
+       LUTL filter_200_5000_b/data_r1<15>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_48.C5LUT
+       LUTL filter_200_5000_b/data_r1<14>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_47.B5LUT
+       LUTL filter_200_5000_b/data_r1<13>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_46.A5LUT
+       LUTL filter_200_5000_b/data_r1<12>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_53.D5LUT
+       LUTL filter_200_5000_b/data_r1<19>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_52.C5LUT
+       LUTL filter_200_5000_b/data_r1<18>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_51.B5LUT
+       LUTL filter_200_5000_b/data_r1<17>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_50.A5LUT
+       LUTL filter_200_5000_b/data_r1<16>_inv1_INV_0
+       LUTL filter_200_5000_b/Multi_b1/y1<38>
+       LUTL filter_200_5000_b/data_r1<21>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_54.A5LUT
+       LUTL filter_200_5000_b/data_r1<20>_inv1_INV_0
+   11. Placer RPM "carry chain" (size: 44)
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_18.D5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<5>_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_17.C5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<4>1_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_16.B5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<3>_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_15.A5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<2>_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_22.D5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<9>_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_21.C5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<8>_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_20.B5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<7>1_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_19.A5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<6>1_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_26.D5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<13>_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_25.C5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<12>_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_24.B5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<11>_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_23.A5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<10>_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_29.D5LUT
+       LUTL filter_20_200_b/data_r1<6>_inv1_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_28.C5LUT
+       LUTL filter_20_200_b/data_r1<5>_inv1_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_28.B5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<15>_INV_0
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_27.A5LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<14>_INV_0
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_31.D5LUT
+       LUTL filter_20_200_b/data_r1<13>_inv1_INV_0
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_cy<21>
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_32.C6LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_cy<21>
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_30.B6LUT
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_30.A5LUT
+       LUTL filter_20_200_b/data_r1<7>_inv1_INV_0
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_32
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_35.B6LUT
+       LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_32
+       LUTL filter_200_5000_a/Suma_a/Mmux_y101_34.A6LUT
+   12. Placer RPM "carry chain" (size: 36)
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<9>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<9>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<9>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<8>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<9>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<7>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<9>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<6>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<13>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<13>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<13>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<12>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<13>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<11>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<13>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<10>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_437.D5LUT
+       LUTL filter_20_200_b/Suma_in/Mmux_y611
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<17>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<16>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<17>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<15>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<17>
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_lut<14>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_441.D5LUT
+       LUTL filter_20_200_b/Suma_in/Mmux_y812
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_440.C5LUT
+       LUTL filter_20_200_b/Suma_in/Mmux_y612
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_439.B5LUT
+       LUTL filter_20_200_b/Suma_in/Mmux_y811
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_438.A5LUT
+       LUTL filter_20_200_b/Suma_in/Mmux_y711
+       LUTL filter_20_200_b/Multi_b0/Mmult_y1_Madd2_cy<22>
+       LUTL PhysOnlyGnd.B6LUT.15
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_442.A5LUT
+       LUTL filter_20_200_b/Suma_in/Mmux_y813
+Phase 9.8  Global Placement (Checksum:89298868) REAL time: 53 secs 
+
+Phase 10.8  Global Placement
+..
+.........................................................................
+.............................................................................
+............................................................................................
+ERROR:Place:543 - This design does not fit into the number of slices available
+   in this device due to the complexity of the design and/or constraints.
+
+   Unplaced instances by type:
+
+     LUTL    626 (7.7)
+
+   Please evaluate the following:
+
+   - If there are user-defined constraints or area groups:
+     Please look at the "User-defined constraints" section below to determine
+     what constraints might be impacting the fitting of this design.
+     Evaluate if they can be moved, removed or resized to allow for fitting.
+     Verify that they do not overlap or conflict with clock region restrictions.
+     See the clock region reports in the MAP log file (*map) for more details
+     on clock region usage.
+
+   - If there is difficulty in placing LUTs:
+     Try using the MAP LUT Combining Option (map lc area|auto|off).
+
+   - If there is difficulty in placing FFs:
+     Evaluate the number and configuration of the control sets in your design.
+
+   The following instances are the last set of instances that failed to place:
+
+   0. Placer RPM "carry chain" (size: 44)
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<17>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<16>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<15>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1199.D5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y242
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<21>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<20>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<19>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1195.D5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y412
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1196.C5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y241
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1197.B5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y413
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1198.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y1412
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1191.D5LUT
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd_xor<11>1212
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1192.C5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y611
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1193.B5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y612
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1194.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y411
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1187.D5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y1111
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1188.C5LUT
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd_xor<11>1211
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1189.B5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y911
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1190.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y912
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<35>
+      LUTL PhysOnlyGnd.B6LUT.4
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1186.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y1411
+   1. Placer RPM "carry chain" (size: 46)
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2171
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<3>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2161
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<2>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2121
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<1>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y213
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<0>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2211
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<7>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2201
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<6>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2191
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<5>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2181
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<4>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y231
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<11>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y221
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<10>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2231
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<9>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2221
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<8>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y271
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<15>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y261
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<14>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y251
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<13>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y241
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<12>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2111
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<19>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2101
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<18>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y291
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<17>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y281
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<16>
+      LUTL filter_200_5000_a/Suma_out/y1<22>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_824.C6LUT
+      LUTL filter_200_5000_a/Suma_out/y1<22>
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<21>
+      LUTL filter_200_5000_a/Suma_out/y1<22>
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<20>
+   2. Placer RPM "carry chain" (size: 44)
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<13>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<12>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<11>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<17>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<16>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<15>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_854.D5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_242_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_855.C5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_232_rt
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<22>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<20>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<22>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<19>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_850.D5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_282_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_851.C5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_272_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_852.B5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_262_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_853.A5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_252_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_846.D5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_322_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_847.C5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_312_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_848.B5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_302_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_849.A5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_292_rt
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<31>
+      LUTL PhysOnlyGnd.B6LUT.8
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_845.A5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd2_cy<30>_rt
+   3. Placer RPM "carry chain" (size: 44)
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_108.D5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<5>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_107.C5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<4>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_106.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<3>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_105.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<2>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_112.D5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<9>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_111.C5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<8>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_110.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<7>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_109.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<6>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_116.D5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<13>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_115.C5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<12>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_114.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<11>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_113.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<10>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_194.D5LUT
+      LUTL filter_20_200_b/data_r2<7>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_193.C5LUT
+      LUTL filter_20_200_b/data_r2<6>_inv1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_118.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<15>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_117.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<14>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_196.D5LUT
+      LUTL filter_20_200_b/data_r2<14>_inv1_INV_0
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_122.C6LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_120.B6LUT
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_195.A5LUT
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd_1011_INV_0
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_125.B6LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_124.A6LUT
+   4. Placer RPM "carry chain" (size: 44)
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<17>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<16>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<15>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1138.D5LUT
+      LUTL filter_5000_20000_a/R2/data<10>_rt
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<21>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<20>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<19>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1134.D5LUT
+      LUTL filter_5000_20000_a/R2/data<12>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1135.C5LUT
+      LUTL filter_5000_20000_a/R2/data<10>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1136.B5LUT
+      LUTL filter_5000_20000_a/R2/data<12>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1137.A5LUT
+      LUTL filter_20_200_a/R2/data<1>_rt.4
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1130.D5LUT
+      LUTL filter_5000_20000_a/R2/data<18>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1131.C5LUT
+      LUTL filter_5000_20000_a/R2/data<14>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1132.B5LUT
+      LUTL filter_5000_20000_a/R2/data<14>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1133.A5LUT
+      LUTL filter_5000_20000_a/R2/data<12>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1126.D5LUT
+      LUTL filter_5000_20000_a/R2/data<19>_rt.2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1127.C5LUT
+      LUTL filter_5000_20000_a/R2/data<18>_rt.2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1128.B5LUT
+      LUTL filter_5000_20000_a/R2/data<17>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1129.A5LUT
+      LUTL filter_5000_20000_a/R2/data<17>_rt.1
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<35>
+      LUTL PhysOnlyGnd.B6LUT.10
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1125.A5LUT
+      LUTL filter_20_200_a/R2/data<1>_rt.5
+   5. Placer RPM "carry chain" (size: 46)
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2171
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<3>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2161
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<2>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2121
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<1>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y214
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<0>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2211
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<7>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2201
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<6>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2191
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<5>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2181
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<4>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y231
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<11>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y224
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<10>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2231
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<9>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2221
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<8>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y271
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<15>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y261
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y251
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<13>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y241
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<12>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2111
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<19>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2101
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y291
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<17>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y281
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<16>
+      LUTL filter_200_5000_a/Suma_b/y1<22>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_827.C6LUT
+      LUTL filter_200_5000_a/Suma_b/y1<22>
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<21>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2131
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<20>
+   6. Placer RPM "carry chain" (size: 44)
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<11>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<10>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<9>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<15>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<14>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<13>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<19>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<18>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<17>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<23>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<22>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<21>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_4.D5LUT
+      LUTL filter_20_200_b/R1/data<20>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_3.C5LUT
+      LUTL filter_20_200_b/R1/data<20>_rt
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<28>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<26>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<28>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<25>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<29>
+      LUTL PhysOnlyGnd.B6LUT.11
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_5.A5LUT
+      LUTL filter_20_200_b/R1/data<21>_rt
+   7. Placer RPM "carry chain" (size: 44)
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<6>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<5>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<4>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<10>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<9>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<8>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<14>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<13>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<12>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<18>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<17>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<16>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_140.D5LUT
+      LUTL filter_5000_20000_b/R1/data<19>_rt.2
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<23>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<22>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<23>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<21>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<23>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<20>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<24>
+      LUTL PhysOnlyGnd.B6LUT.12
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_141.A5LUT
+      LUTL filter_5000_20000_b/R1/data<21>_rt.3
+   8. Placer RPM "carry chain" (size: 44)
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_37.D5LUT
+      LUTL filter_200_5000_b/data_r1<3>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_36.C5LUT
+      LUTL filter_200_5000_b/data_r1<2>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_35.B5LUT
+      LUTL filter_200_5000_b/data_r1<1>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_34.A5LUT
+      LUTL filter_200_5000_b/data_r1<0>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_41.D5LUT
+      LUTL filter_200_5000_b/data_r1<7>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_40.C5LUT
+      LUTL filter_200_5000_b/data_r1<6>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_39.B5LUT
+      LUTL filter_200_5000_b/data_r1<5>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_38.A5LUT
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd_1411_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_45.D5LUT
+      LUTL filter_200_5000_b/data_r1<11>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_44.C5LUT
+      LUTL filter_200_5000_b/data_r1<10>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_43.B5LUT
+      LUTL filter_200_5000_b/data_r1<9>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_42.A5LUT
+      LUTL filter_200_5000_b/data_r1<8>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_49.D5LUT
+      LUTL filter_200_5000_b/data_r1<15>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_48.C5LUT
+      LUTL filter_200_5000_b/data_r1<14>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_47.B5LUT
+      LUTL filter_200_5000_b/data_r1<13>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_46.A5LUT
+      LUTL filter_200_5000_b/data_r1<12>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_53.D5LUT
+      LUTL filter_200_5000_b/data_r1<19>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_52.C5LUT
+      LUTL filter_200_5000_b/data_r1<18>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_51.B5LUT
+      LUTL filter_200_5000_b/data_r1<17>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_50.A5LUT
+      LUTL filter_200_5000_b/data_r1<16>_inv1_INV_0
+      LUTL filter_200_5000_b/Multi_b1/y1<38>
+      LUTL filter_200_5000_b/data_r1<21>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_54.A5LUT
+      LUTL filter_200_5000_b/data_r1<20>_inv1_INV_0
+   9. Placer RPM "carry chain" (size: 44)
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_18.D5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<5>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_17.C5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<4>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_16.B5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<3>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_15.A5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<2>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_22.D5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<9>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_21.C5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<8>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_20.B5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<7>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_19.A5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<6>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_26.D5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<13>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_25.C5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<12>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_24.B5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<11>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_23.A5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<10>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_29.D5LUT
+      LUTL filter_20_200_b/data_r1<6>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_28.C5LUT
+      LUTL filter_20_200_b/data_r1<5>_inv1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_28.B5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<15>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_27.A5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<14>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_31.D5LUT
+      LUTL filter_20_200_b/data_r1<13>_inv1_INV_0
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_32.C6LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_30.B6LUT
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_30.A5LUT
+      LUTL filter_20_200_b/data_r1<7>_inv1_INV_0
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_35.B6LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_34.A6LUT
+   10. Placer RPM "carry chain" (size: 46)
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2171
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<3>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2161
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<2>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2121
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<1>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y215
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<0>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2211
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<7>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2201
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<6>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2191
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<5>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2181
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<4>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y231
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<11>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y224
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<10>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2231
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<9>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2221
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<8>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y271
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<15>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y261
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<14>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y251
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<13>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y241
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<12>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2111
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<19>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2101
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<18>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y291
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<17>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y281
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<16>
+       LUTL filter_5000_20000_a/Suma_out/y1<22>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1101.C6LUT
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2141
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<21>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2131
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<20>
+   11. Placer RPM "carry chain" (size: 46)
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2171
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<3>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2161
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<2>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2121
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<1>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y211
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<0>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2211
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<7>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2201
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<6>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2191
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<5>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2181
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<4>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<11>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<11>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y224
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<10>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2231
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<9>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2221
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<8>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<14>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<13>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<12>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<18>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<17>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<16>
+       LUTL filter_20_200_a/Suma_out/y1<22>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_518.C6LUT
+       LUTL filter_20_200_a/Suma_out/y1<22>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<21>
+       LUTL filter_20_200_a/Suma_out/y1<22>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<20>
+   12. Placer RPM "carry chain" (size: 46)
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2171
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<3>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2161
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<2>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2121
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<1>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y211
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<0>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2211
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<7>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2201
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<6>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2191
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<5>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2181
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<4>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y231
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<11>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y224
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<10>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2231
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<9>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2221
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<8>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<14>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<13>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<12>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<18>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<17>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<16>
+       LUTL filter_20_200_a/Suma_b/y1<22>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_521.C6LUT
+       LUTL filter_20_200_a/Suma_b/y1<22>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<21>
+       LUTL filter_20_200_a/Suma_b/y1<22>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<20>
+   13. Placer RPM "carry chain" (size: 44)
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<6>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<5>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<4>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<10>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<9>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<8>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<14>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<13>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<12>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<18>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<17>1
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<16>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_292.D5LUT
+       LUTL filter_5000_20000_b/R2/data<14>_rt.2
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_291.C5LUT
+       LUTL filter_5000_20000_b/R2/data<13>_rt
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<23>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<21>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<23>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<20>1
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<24>
+       LUTL PhysOnlyGnd.B6LUT.16
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_293.A5LUT
+       LUTL filter_5000_20000_b/R2/data<15>_rt.3
+Phase 10.8  Global Placement (Checksum:ac48caf7) REAL time: 1 mins 16 secs 
+
+Phase 11.9  Local Placement Optimization
+ERROR:Place:543 - This design does not fit into the number of slices available
+   in this device due to the complexity of the design and/or constraints.
+
+   Unplaced instances by type:
+
+     LUTL    626 (7.7)
+
+   Please evaluate the following:
+
+   - If there are user-defined constraints or area groups:
+     Please look at the "User-defined constraints" section below to determine
+     what constraints might be impacting the fitting of this design.
+     Evaluate if they can be moved, removed or resized to allow for fitting.
+     Verify that they do not overlap or conflict with clock region restrictions.
+     See the clock region reports in the MAP log file (*map) for more details
+     on clock region usage.
+
+   - If there is difficulty in placing LUTs:
+     Try using the MAP LUT Combining Option (map lc area|auto|off).
+
+   - If there is difficulty in placing FFs:
+     Evaluate the number and configuration of the control sets in your design.
+
+   The following instances are the last set of instances that failed to place:
+
+   0. Placer RPM "carry chain" (size: 44)
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<17>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<16>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<15>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1199.D5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y242
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<21>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<20>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_lut<19>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1195.D5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y412
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1196.C5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y241
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1197.B5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y413
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1198.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y1412
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1191.D5LUT
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd_xor<11>1212
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1192.C5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y611
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1193.B5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y612
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1194.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y411
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1187.D5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y1111
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1188.C5LUT
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd_xor<11>1211
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1189.B5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y911
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1190.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y912
+      LUTL filter_5000_20000_a/Multi_b0/Mmult_y1_Madd3_cy<35>
+      LUTL PhysOnlyGnd.B6LUT.4
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1186.A5LUT
+      LUTL filter_5000_20000_a/Suma_in/Mmux_y1411
+   1. Placer RPM "carry chain" (size: 46)
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2171
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<3>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2161
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<2>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2121
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<1>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y213
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<0>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2211
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<7>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2201
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<6>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2191
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<5>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2181
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<4>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y231
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<11>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y221
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<10>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2231
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<9>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2221
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<8>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y271
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<15>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y261
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<14>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y251
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<13>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y241
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<12>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2111
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<19>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y2101
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<18>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y291
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<17>
+      LUTL filter_200_5000_a/Multi_b0/Mmux_y281
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<16>
+      LUTL filter_200_5000_a/Suma_out/y1<22>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_824.C6LUT
+      LUTL filter_200_5000_a/Suma_out/y1<22>
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<21>
+      LUTL filter_200_5000_a/Suma_out/y1<22>
+      LUTL filter_200_5000_a/Suma_out/Madd_y1_lut<20>
+   2. Placer RPM "carry chain" (size: 44)
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<13>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<12>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<11>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<17>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<16>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<15>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_854.D5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_242_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_855.C5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_232_rt
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<22>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<20>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<22>
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_lut<19>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_850.D5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_282_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_851.C5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_272_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_852.B5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_262_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_853.A5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_252_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_846.D5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_322_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_847.C5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_312_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_848.B5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_302_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_849.A5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd_292_rt
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd3_cy<31>
+      LUTL PhysOnlyGnd.B6LUT.8
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_845.A5LUT
+      LUTL filter_200_5000_a/Multi_b1/Mmult_y1_Madd2_cy<30>_rt
+   3. Placer RPM "carry chain" (size: 44)
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_108.D5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<5>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_107.C5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<4>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_106.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<3>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_105.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<2>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_112.D5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<9>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_111.C5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<8>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_110.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<7>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_109.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<6>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_116.D5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<13>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_115.C5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<12>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_114.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<11>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_113.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<10>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_194.D5LUT
+      LUTL filter_20_200_b/data_r2<7>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_193.C5LUT
+      LUTL filter_20_200_b/data_r2<6>_inv1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_118.B5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<15>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_117.A5LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_lut<14>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_196.D5LUT
+      LUTL filter_20_200_b/data_r2<14>_inv1_INV_0
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_122.C6LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_120.B6LUT
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_195.A5LUT
+      LUTL filter_20_200_b/Multi_b2/Mmult_y1_Madd_1011_INV_0
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_125.B6LUT
+      LUTL filter_20_200_b/Multi_a2/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_124.A6LUT
+   4. Placer RPM "carry chain" (size: 44)
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<17>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<16>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<18>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<15>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1138.D5LUT
+      LUTL filter_5000_20000_a/R2/data<10>_rt
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<21>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<20>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<22>
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_lut<19>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1134.D5LUT
+      LUTL filter_5000_20000_a/R2/data<12>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1135.C5LUT
+      LUTL filter_5000_20000_a/R2/data<10>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1136.B5LUT
+      LUTL filter_5000_20000_a/R2/data<12>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1137.A5LUT
+      LUTL filter_20_200_a/R2/data<1>_rt.4
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1130.D5LUT
+      LUTL filter_5000_20000_a/R2/data<18>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1131.C5LUT
+      LUTL filter_5000_20000_a/R2/data<14>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1132.B5LUT
+      LUTL filter_5000_20000_a/R2/data<14>_rt
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1133.A5LUT
+      LUTL filter_5000_20000_a/R2/data<12>_rt.1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1126.D5LUT
+      LUTL filter_5000_20000_a/R2/data<19>_rt.2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1127.C5LUT
+      LUTL filter_5000_20000_a/R2/data<18>_rt.2
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1128.B5LUT
+      LUTL filter_5000_20000_a/R2/data<17>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1129.A5LUT
+      LUTL filter_5000_20000_a/R2/data<17>_rt.1
+      LUTL filter_5000_20000_a/Multi_b2/Mmult_y1_Madd3_cy<35>
+      LUTL PhysOnlyGnd.B6LUT.10
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1125.A5LUT
+      LUTL filter_20_200_a/R2/data<1>_rt.5
+   5. Placer RPM "carry chain" (size: 46)
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2171
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<3>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2161
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<2>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2121
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<1>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y214
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<0>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2211
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<7>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2201
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<6>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2191
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<5>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2181
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<4>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y231
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<11>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y224
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<10>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2231
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<9>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2221
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<8>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y271
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<15>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y261
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<14>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y251
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<13>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y241
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<12>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2111
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<19>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2101
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<18>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y291
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<17>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y281
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<16>
+      LUTL filter_200_5000_a/Suma_b/y1<22>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_827.C6LUT
+      LUTL filter_200_5000_a/Suma_b/y1<22>
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<21>
+      LUTL filter_200_5000_a/Multi_b1/Mmux_y2131
+      LUTL filter_200_5000_a/Suma_b/Madd_y1_lut<20>
+   6. Placer RPM "carry chain" (size: 44)
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<11>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<10>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<12>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<9>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<15>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<14>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<16>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<13>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<19>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<18>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<20>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<17>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<23>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<22>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<24>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<21>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_4.D5LUT
+      LUTL filter_20_200_b/R1/data<20>_rt_pack_1
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_3.C5LUT
+      LUTL filter_20_200_b/R1/data<20>_rt
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<28>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<26>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<28>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_lut<25>
+      LUTL filter_20_200_b/Multi_a1/Mmult_y1_Madd1_cy<29>
+      LUTL PhysOnlyGnd.B6LUT.11
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_5.A5LUT
+      LUTL filter_20_200_b/R1/data<21>_rt
+   7. Placer RPM "carry chain" (size: 44)
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<6>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<5>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<7>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<4>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<10>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<9>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<11>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<8>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<14>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<13>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<15>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<12>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<18>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<17>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<19>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<16>
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_140.D5LUT
+      LUTL filter_5000_20000_b/R1/data<19>_rt.2
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<23>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<22>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<23>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<21>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<23>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_lut<20>
+      LUTL filter_5000_20000_b/Multi_a1/Mmult_y1_Madd2_cy<24>
+      LUTL PhysOnlyGnd.B6LUT.12
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_141.A5LUT
+      LUTL filter_5000_20000_b/R1/data<21>_rt.3
+   8. Placer RPM "carry chain" (size: 44)
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_37.D5LUT
+      LUTL filter_200_5000_b/data_r1<3>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_36.C5LUT
+      LUTL filter_200_5000_b/data_r1<2>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_35.B5LUT
+      LUTL filter_200_5000_b/data_r1<1>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_34.A5LUT
+      LUTL filter_200_5000_b/data_r1<0>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_41.D5LUT
+      LUTL filter_200_5000_b/data_r1<7>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_40.C5LUT
+      LUTL filter_200_5000_b/data_r1<6>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_39.B5LUT
+      LUTL filter_200_5000_b/data_r1<5>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_38.A5LUT
+      LUTL filter_200_5000_b/Multi_a1/Mmult_y1_Madd_1411_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_45.D5LUT
+      LUTL filter_200_5000_b/data_r1<11>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_44.C5LUT
+      LUTL filter_200_5000_b/data_r1<10>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_43.B5LUT
+      LUTL filter_200_5000_b/data_r1<9>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_42.A5LUT
+      LUTL filter_200_5000_b/data_r1<8>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_49.D5LUT
+      LUTL filter_200_5000_b/data_r1<15>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_48.C5LUT
+      LUTL filter_200_5000_b/data_r1<14>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_47.B5LUT
+      LUTL filter_200_5000_b/data_r1<13>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_46.A5LUT
+      LUTL filter_200_5000_b/data_r1<12>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_53.D5LUT
+      LUTL filter_200_5000_b/data_r1<19>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_52.C5LUT
+      LUTL filter_200_5000_b/data_r1<18>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_51.B5LUT
+      LUTL filter_200_5000_b/data_r1<17>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_50.A5LUT
+      LUTL filter_200_5000_b/data_r1<16>_inv1_INV_0
+      LUTL filter_200_5000_b/Multi_b1/y1<38>
+      LUTL filter_200_5000_b/data_r1<21>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_54.A5LUT
+      LUTL filter_200_5000_b/data_r1<20>_inv1_INV_0
+   9. Placer RPM "carry chain" (size: 44)
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_18.D5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<5>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_17.C5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<4>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_16.B5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<3>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_15.A5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<2>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_22.D5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<9>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_21.C5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<8>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_20.B5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<7>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_19.A5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<6>1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_26.D5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<13>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_25.C5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<12>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_24.B5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<11>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_23.A5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<10>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_29.D5LUT
+      LUTL filter_20_200_b/data_r1<6>_inv1_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_28.C5LUT
+      LUTL filter_20_200_b/data_r1<5>_inv1_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_28.B5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<15>_INV_0
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_27.A5LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_lut<14>_INV_0
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_31.D5LUT
+      LUTL filter_20_200_b/data_r1<13>_inv1_INV_0
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_32.C6LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_cy<21>
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_30.B6LUT
+      LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_30.A5LUT
+      LUTL filter_20_200_b/data_r1<7>_inv1_INV_0
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_35.B6LUT
+      LUTL filter_20_200_b/Multi_b1/Mmult_y1_Madd_32
+      LUTL filter_200_5000_a/Suma_a/Mmux_y101_34.A6LUT
+   10. Placer RPM "carry chain" (size: 46)
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2171
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<3>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2161
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<2>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2121
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<1>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y215
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<0>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2211
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<7>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2201
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<6>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2191
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<5>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2181
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<4>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y231
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<11>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y224
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<10>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2231
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<9>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2221
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<8>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y271
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<15>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y261
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<14>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y251
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<13>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y241
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<12>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2111
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<19>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2101
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<18>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y291
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<17>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y281
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<16>
+       LUTL filter_5000_20000_a/Suma_out/y1<22>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_1101.C6LUT
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2141
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<21>
+       LUTL filter_5000_20000_a/Multi_b0/Mmux_y2131
+       LUTL filter_5000_20000_a/Suma_out/Madd_y1_lut<20>
+   11. Placer RPM "carry chain" (size: 46)
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2171
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<3>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2161
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<2>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2121
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<1>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y211
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<0>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2211
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<7>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2201
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<6>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2191
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<5>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2181
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<4>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<11>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<11>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y224
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<10>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2231
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<9>
+       LUTL filter_20_200_a/Multi_b0/Mmux_y2221
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<8>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<14>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<13>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<12>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<18>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<17>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<16>
+       LUTL filter_20_200_a/Suma_out/y1<22>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_518.C6LUT
+       LUTL filter_20_200_a/Suma_out/y1<22>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<21>
+       LUTL filter_20_200_a/Suma_out/y1<22>
+       LUTL filter_20_200_a/Suma_out/Madd_y1_lut<20>
+   12. Placer RPM "carry chain" (size: 46)
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2171
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<3>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2161
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<2>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2121
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<1>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y211
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<0>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2211
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<7>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2201
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<6>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2191
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<5>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2181
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<4>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y231
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<11>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y224
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<10>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2231
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<9>
+       LUTL filter_20_200_a/Multi_b1/Mmux_y2221
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<8>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<14>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<13>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<15>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<12>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<18>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<17>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_cy<19>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<16>
+       LUTL filter_20_200_a/Suma_b/y1<22>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_521.C6LUT
+       LUTL filter_20_200_a/Suma_b/y1<22>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<21>
+       LUTL filter_20_200_a/Suma_b/y1<22>
+       LUTL filter_20_200_a/Suma_b/Madd_y1_lut<20>
+   13. Placer RPM "carry chain" (size: 44)
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<6>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<5>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<7>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<4>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<10>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<9>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<11>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<8>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<14>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<13>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<15>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<12>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<18>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<17>1
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<19>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<16>
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_292.D5LUT
+       LUTL filter_5000_20000_b/R2/data<14>_rt.2
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_291.C5LUT
+       LUTL filter_5000_20000_b/R2/data<13>_rt
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<23>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<21>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<23>
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_lut<20>1
+       LUTL filter_5000_20000_b/Multi_a2/Mmult_y1_Madd2_cy<24>
+       LUTL PhysOnlyGnd.B6LUT.16
+       LUTL filter_20_200_a/Multi_b1/Mmult_y1_Madd1_lut<7>_293.A5LUT
+       LUTL filter_5000_20000_b/R2/data<15>_rt.3
+ERROR:Place:120 - There were not enough sites to place all selected components.
+   Some of these failures can be circumvented by using an alternate algorithm
+   (though it may take longer run time). If you would like to enable this
+   algorithm please set the environment variable XIL_PAR_ENABLE_LEGALIZER to 1
+   and try again 
+
+
+Phase 11.9  Local Placement Optimization (Checksum:ac48caf7) REAL time: 1 mins 18 secs 
+
+Total REAL time to Placer completion: 1 mins 18 secs 
+Total CPU  time to Placer completion: 1 mins 14 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "filter_opt_top_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   5
+Number of warnings :   0

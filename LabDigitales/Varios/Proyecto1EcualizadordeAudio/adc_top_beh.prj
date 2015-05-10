@@ -1,0 +1,4 @@
+verilog work "../Proyecto_Corto_2_Version_Final/CLK.v"
+verilog work "adc_eq.v"
+verilog work "adc_top.v"
+verilog work "C:/Windows/14.7/ISE_DS/ISE//verilog/src/glbl.v"
