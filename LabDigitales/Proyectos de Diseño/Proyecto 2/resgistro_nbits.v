@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    09:38:31 05/18/2015 
+// Create Date:    00:27:16 04/14/2015 
 // Design Name: 
-// Module Name:    PWM 
+// Module Name:    resgister_fil 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,32 +18,19 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module PWM #(parameter magp=12)(
-input clk_i,rst_i,
-input [(magp-1):0] vin_i,
-output reg vout_o
-);
-
-reg [(magp-1):0] contador = 0;
-
-always @ (posedge clk_i)
-begin
-	if (rst_i)
-		begin
-		vout_o <= 0;
-		contador <= 0;
-		end
-	else if(contador < vin_i) 
-		begin
-		vout_o <= 1;
-		end
-	else 
-		begin
-		vout_o <= 0;
-		end
-	contador <= contador + 1'b1;
-end
-
+module registro_nbits #(parameter largo = 24)(
+	input clk,
+	input rst,
+	input [largo:0] data_i,
+	output reg [largo:0] data_o
+    );
+	
+//reg [largo:0] data_o;
+	
+always @(posedge clk, posedge rst)
+	if (rst)
+		data_o <= 0;
+	else if (clk)	
+		data_o <= data_i;
 
 endmodule
-
